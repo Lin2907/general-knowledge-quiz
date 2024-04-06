@@ -1,4 +1,4 @@
-* {margin:0;
+body {margin:0;
     padding: 0;
     }
 /* Header styles*/
@@ -33,20 +33,23 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
     /* The Modal (background) */
 .open {
     display: none; /* Hidden by default */
-    position: relative; /* Stay in place */
+    margin :20px;
+    position: relative;
+    align-self: center;
     z-index:1;
-    width: 80%; /* Full width */
+    width: 100%;
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(156, 43, 226); /* Fallback color */
+    background-color: rgb(131, 13, 115); /* Fallback color */
     background-color: rgba(239, 219, 240, 0.207); /* Black w/ opacity */
   }
   
   /* Modal Content/Box  W3 Schools*/
   .rules-content {
     background-color: rgb(131, 13, 115);
+    line-height:1.6 ;
     color: white;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 5% auto ; /* 5% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
@@ -72,7 +75,16 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
   #username { display:none;
   }  /* Hides the username until start is clicked*/
    
+  #rules { padding:20px 0;}
 
+  #rules > button { 
+          background-color: rgb(131, 13, 115);
+          color:white;
+          font-size: 1rem;
+          margin-left: 30%;
+          border-radius: 8px;
+           width: 40%;
+          padding:20px; }
 
 
 
