@@ -46,7 +46,7 @@ function openStart () {
 let getQuestions = document.getElementById ("quiz");
 
 function enterUsername()  {
-    document.getElementById("start").style.display = "none"; // Hide the start button
+    document.getElementById("start").style.display = "none"; // Hides the start button
     getQuestions.style.display= "block";
 }
 
@@ -56,8 +56,7 @@ function hideEnter() {
     hideUsername.style.display = "none";
    }
 
- //// Opening Quiz div by adding username and disabling the button unless the name is entered
-
+ 
 
 // Adding questions - Question source : https://www.quiztriviagames.com/multiple-choice-trivia-questions/
 let questions = [
@@ -68,32 +67,32 @@ let questions = [
     },
     {
         id : 1,
-        question: "In which museum can you find Leonardo Da Vinci’s Mona Lisa?",
+        question: "In which museum can you find Leonardo Da Vinci's Mona Lisa?",
         options: ["Le Louvre", "Uffizi Museum", "British Museum", "Metropolitan Museum of Art"],
         answer: "Le Louvre"
     },
     {   id : 2,
-        question: "In the Big Bang Theory, what is the name of Sheldon and Leonard’s neighbour?",
+        question: "In the Big Bang Theory, what is the name of Sheldon and Leonard's neighbour?",
         options: ["Penny", "Patty", "Lily", "Jessie"],
         answer: "Penny"
     }
   ];
 
-let question = document.getElementById("questions");
-let options = document.getElementById("options");
-let result = document.getElementById("result");
-let feedback = document.getElementById("feedback");
+let questionElement = document.getElementById("questions");
+let optionsElement = document.getElementById("options");
+let resultElement = document.getElementById("result");
+let feedbackElement = document.getElementById("feedback");
 
 // Initializing the first question with Index 0 
-let currentQuestion= 0;
+let currentQuestionIndex= 0;
 
 //retrieve the current question object from an above array with questions using the currentQuestion index
 function showQuestion() {  
-  let currentQuestionObj = questions[currentQuestion];
-  question.textContent = currentQuestionObj.question;
+  let currentQuestion = questions[currentQuestionIndex];
+  questionElement.textContent = currentQuestion.question;
   optionsElement.innerHTML = "";
   //Create and style buttons for each option
-  currentQuestionObj.options.forEach(option => {
+  currentQuestion.options.forEach(option => {
       let button = document.createElement("button"); 
       button.textContent = option;
       button.style.width ="200px"
@@ -101,8 +100,12 @@ function showQuestion() {
       button.style.color="white"
       button.style.padding = "20px";
       button.style.borderRadius = "10px";
-      
+      button.addEventListener("click", () => checkAnswer(option, currentQuestion));
+      optionsElement.appendChild(button);
   });
 }
-
+// calling the function to show the questions
+document.addEventListener("DOMContentLoaded", function() {
+  showQuestion();
+});
 
