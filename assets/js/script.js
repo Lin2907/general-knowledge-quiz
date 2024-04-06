@@ -37,3 +37,29 @@ function openStart () {
   startQuiz.style.display ="block";
 }
 
+
+// Adding questions - Question source : https://www.quiztriviagames.com/multiple-choice-trivia-questions/
+let questions = [
+    {   id : 0,
+        question: "What is the longest river in the world?",
+        options: ["Amazon River", "Nile", "Yellow River", "Congo River"],
+        answer: "Nile"
+    },
+    {
+        id : 1,
+        question: "In which museum can you find Leonardo Da Vinci’s Mona Lisa?",
+        options: ["Le Louvre", "Uffizi Museum", "British Museum", "Metropolitan Museum of Art"],
+        answer: "Le Louvre"
+    },
+    {   id : 2,
+        question: "In the Big Bang Theory, what is the name of Sheldon and Leonard’s neighbour?",
+        options: ["Penny", "Patty", "Lily", "Jessie"],
+        answer: "Penny"
+    }
+  ];
+
+let questionElement = document.getElementById("questions");
+let optionsElement = document.getElementById("options");
+let resultElement = document.getElementById("result");
+let feedbackElement = document.getElementById("feedback");
+
