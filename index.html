@@ -30,7 +30,7 @@
                  <div class="rules-content">
                    <span class="close">&times;</span>
                    <p>Test your knowledge on a variety of topics from around the world. This quiz consists of a series of questions that will challenge your understanding of various subjects. 
-                    You'll have 10 minutes to answer as many questions as you can. Each question will have multiple-choice options, 
+                    You'll have 60 seconds for each question. Each question will have multiple-choice options, 
                     and you'll need to select the correct answer from the choices provided.
                     <br>
                     Get ready to dive into a world of facts spanning different fields, including history, geography, science, literature, and more. 
@@ -48,8 +48,8 @@
                    <p>Are you ready to put your general knowledge to the test? Let's begin!</p>
                  </div>
                </div>
-               
-               <button id = "start">Start the Quiz</button> <br>
+               <!--Start button function will be triggered on click-->
+               <button id = "start" onclick = "openStart();">Start the Quiz</button> <br>
                
            
                <div id="username">
@@ -58,8 +58,7 @@
                    <input name="username" id="name" type="text" placeholder= "" required>
                <div class="submit">
                    <input type="submit" id="enter" value="Enter">
-               </div>
-               
+               </div> 
                </div>
                
                <div id="quiz">

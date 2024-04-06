@@ -26,3 +26,14 @@ window.onclick = function(event) {
   }
 } 
 // End of W3 Schools code - adjusted
+
+// Start the Quiz button
+
+let startQuiz = document.getElementById("username");  
+
+// When clicking on Start , the username option is shown , previously hidden
+
+function openStart () {
+  startQuiz.style.display ="block";
+}
+
