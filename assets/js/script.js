@@ -56,7 +56,8 @@ function hideEnter() {
     hideUsername.style.display = "none";
    }
 
-   
+ //// Opening Quiz div by adding username and disabling the button unless the name is entered
+
 
 // Adding questions - Question source : https://www.quiztriviagames.com/multiple-choice-trivia-questions/
 let questions = [
@@ -78,8 +79,30 @@ let questions = [
     }
   ];
 
-let questionElement = document.getElementById("questions");
-let optionsElement = document.getElementById("options");
-let resultElement = document.getElementById("result");
-let feedbackElement = document.getElementById("feedback");
+let question = document.getElementById("questions");
+let options = document.getElementById("options");
+let result = document.getElementById("result");
+let feedback = document.getElementById("feedback");
+
+// Initializing the first question with Index 0 
+let currentQuestion= 0;
+
+//retrieve the current question object from an above array with questions using the currentQuestion index
+function showQuestion() {  
+  let currentQuestionObj = questions[currentQuestion];
+  question.textContent = currentQuestionObj.question;
+  optionsElement.innerHTML = "";
+  //Create and style buttons for each option
+  currentQuestionObj.options.forEach(option => {
+      let button = document.createElement("button"); 
+      button.textContent = option;
+      button.style.width ="200px"
+      button.style.backgroundColor="#bd32e8";
+      button.style.color="white"
+      button.style.padding = "20px";
+      button.style.borderRadius = "10px";
+      
+  });
+}
+
 

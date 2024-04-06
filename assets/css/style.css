@@ -88,7 +88,11 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
 
           /*Hides the Start button */
   #start { display:none;}
-
+  /*Quiz questions /answers style*/
+  
+#quiz { 
+    text-align: center;
+    font-size:150%; } 
 
 /* Smaller screens adjustment*/
 
