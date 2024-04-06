@@ -20,12 +20,12 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
     background-color:  rgb(248, 226, 248);
     }
     
-    #hero { display: flex;
+    #board { display: flex;
         padding:20px;
         
     }
     
-    #heroimg { position:relative;
+    #girl-img { position:relative;
         width:60%;
         left:20%;
         }
@@ -77,7 +77,7 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
    
   #rules { padding:20px 0;}
 
-  #rules > button { 
+  #rules > button , #start { 
           background-color: rgb(131, 13, 115);
           color:white;
           font-size: 1rem;
@@ -86,13 +86,14 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
            width: 40%;
           padding:20px; }
 
-
+          /*Hides the Start button */
+  #start { display:none;}
 
 
 /* Smaller screens adjustment*/
 
 @media only screen and (max-width: 768px) {
-    #heroimg {
+    #girl-img {
         flex-direction: column;
         width:100%;
         left:0%;
