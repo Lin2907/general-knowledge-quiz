@@ -37,6 +37,15 @@ function openStart () {
   startQuiz.style.display ="block";
 }
 
+// Opening Quiz div by adding username 
+let getQuestions = document.getElementById ("quiz");
+
+function enterUsername()  {
+    document.getElementById("start").style.display = "none"; // Hide the start button
+    getQuestions.style.display= "block";
+}
+
+
 
 // Adding questions - Question source : https://www.quiztriviagames.com/multiple-choice-trivia-questions/
 let questions = [
