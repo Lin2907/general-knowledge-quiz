@@ -96,6 +96,10 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
        font-size:150%;
        color: rgb(131, 13, 115);
  }
+ #questions {
+    padding:20px;
+ }
+
     
 
 /* Smaller screens adjustment*/

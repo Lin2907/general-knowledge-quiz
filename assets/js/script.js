@@ -96,10 +96,11 @@ function showQuestion() {
       let button = document.createElement("button"); 
       button.textContent = option;
       button.style.width ="200px"
-      button.style.backgroundColor="#bd32e8";
+      button.style.backgroundColor="rgb(131, 13, 115)";
       button.style.color="white"
       button.style.padding = "20px";
       button.style.borderRadius = "10px";
+      button.style.fontSize = "60%";
       button.addEventListener("click", () => checkAnswer(option, currentQuestion));
       optionsElement.appendChild(button);
   });
