@@ -10,6 +10,64 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
     text-align: center;
     font-size:250%;
     }
+#holder {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border : solid rgb(131, 13, 115) 10px;
+    padding :20px;
+    margin : 30px auto;
+    background-color:  rgb(248, 226, 248);
+    }
+    
+    #hero { display: flex;
+        padding:20px;
+        
+    }
+    
+    #heroimg { position:relative;
+        width:60%;
+        left:20%;
+        }
+    
+    /* The Modal (background) */
+.open {
+    display: none; /* Hidden by default */
+    position: relative; /* Stay in place */
+    z-index:1;
+    width: 80%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(156, 43, 226); /* Fallback color */
+    background-color: rgba(239, 219, 240, 0.207); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box  W3 Schools*/
+  .rules-content {
+    background-color: rgb(131, 13, 115);
+    color: white;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* End of W3 Schools style - adjusted */
 
 
 
@@ -20,7 +78,12 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
 /* Smaller screens adjustment*/
 
 @media only screen and (max-width: 768px) {
-    
+    #heroimg {
+        flex-direction: column;
+        width:100%;
+        left:0%;
+    }
+    h1 { font-size:200%;}
 
 
 }

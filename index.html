@@ -12,6 +12,64 @@
     <header>
     <h1>General knowledge Quiz</h1>
     </header>
+    <main>
+        <div id ="holder">
+            <div id="hero">
+               <img src="assets/images/girl-reading-the-board.webp" id="heroimg"  alt="Girl looking at the board with notes">
+            </div>
+               
+               <div id="rules">
+               <!-- Trigger/Open The Modal -->
+               <button>Instructions</button>
+               </div>
+               
+               <!-- The Modal W3 Schools-->
+               <div id="myRules" class="open">
+               
+                 <!-- Modal content -->
+                 <div class="rules-content">
+                   <span class="close">&times;</span>
+                   <p>Test your knowledge on a variety of topics from around the world. This quiz consists of a series of questions that will challenge your understanding of various subjects. 
+                    You'll have 10 minutes to answer as many questions as you can. Each question will have multiple-choice options, 
+                    and you'll need to select the correct answer from the choices provided.
+                    <br>
+                    Get ready to dive into a world of facts spanning different fields, including history, geography, science, literature, and more. 
+                    Are you up for the challenge? Let's see how well you know the world around you!</p> <br>
+                    
+                   <ul>
+                       <li>Read each question carefully before selecting your answer.</li>
+                       <li>Choose the option you believe is correct.</li>
+                       <li>Click on the chosen option to submit your answer.</li>
+                       <li>You'll receive instant feedback after each question to let you know whether your answer was correct or incorrect.</li>
+                       <li>Keep an eye on the timer! You have 10 minutes to complete the quiz.</li>
+                       <li>Try to answer as many questions as you can within the time limit.</li>
+                   </ul>
+                   <br>
+                   <p>Are you ready to put your general knowledge to the test? Let's begin!</p>
+                 </div>
+               </div>
+               
+               <button id = "start">Start the Quiz</button> <br>
+               
+           
+               <div id="username">
+               
+                   <label for="name">Please enter your Username</label>
+                   <input name="username" id="name" type="text" placeholder= "" required>
+               <div class="submit">
+                   <input type="submit" id="enter" value="Enter">
+               </div>
+               
+               </div>
+               
+               <div id="quiz">
+               <div class="question" id="questions"></div>
+               <div class="options" id="options"></div>
+               <div id="result"></div>
+               <div id="feedback"></div>  
+                </div>
+               </div>    
+    </main>
 
 
     <script src="assets/js/script.js"></script>  
