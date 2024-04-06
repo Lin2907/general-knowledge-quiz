@@ -45,6 +45,12 @@ function enterUsername()  {
     getQuestions.style.display= "block";
 }
 
+// Hide the Enter button after submitted
+function hideEnter() {
+    let hideUsername = document.getElementById ("username") ;  
+    hideUsername.style.display = "none";
+   }
+
 
 
 // Adding questions - Question source : https://www.quiztriviagames.com/multiple-choice-trivia-questions/
