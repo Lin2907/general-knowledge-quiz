@@ -32,10 +32,7 @@ window.onclick = function(event) {
 } 
 // End of W3 Schools code - adjusted
 
-
-
 // Loading Quiz by clicking on Start and hides the start button
-
 
 function startQuiz()  {
     let getQuestions = document.getElementById ("quiz");
@@ -43,9 +40,6 @@ function startQuiz()  {
     getQuestions.style.display= "block";
 }
 
-
-
- 
 
 // Adding questions - Question source : https://www.quiztriviagames.com/multiple-choice-trivia-questions/
 let questions = [
@@ -80,7 +74,7 @@ function showQuestion() {
   let currentQuestion = questions[currentQuestionIndex];
   questionElement.textContent = currentQuestion.question;
   optionsElement.innerHTML = "";
-  //Create and style buttons for each option
+  //Create and style buttons for each option , source W3 Schools "JavaScript Array forEach()"
   currentQuestion.options.forEach(option => {
       let button = document.createElement("button"); 
       button.textContent = option;
@@ -90,12 +84,21 @@ function showQuestion() {
       button.style.padding = "20px";
       button.style.borderRadius = "10px";
       button.style.fontSize = "60%";
-      button.addEventListener("click", () => checkAnswer(option, currentQuestion));
+      button.addEventListener("click", checkAnswer(option, currentQuestion));
       optionsElement.appendChild(button);
   });
 }
-// calling the function to show the questions
+// Calling the function to show the questions
 document.addEventListener("DOMContentLoaded", function() {
   showQuestion();
 });
 
+ // Checking the answer showing the result
+function checkAnswer(selectedOption, currentQuestion) {
+  if (selectedOption === currentQuestion.answer) {
+      resultElement.textContent = "Amazing ! This is Correct!";
+    } else {
+      resultElement.textContent = "Awwww, wrong! The correct answer is: " + currentQuestion.answer;
+
+    }
+  }
