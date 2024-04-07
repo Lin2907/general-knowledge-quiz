@@ -79,6 +79,7 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
 
   #rules > button , #start { 
           background-color: rgb(131, 13, 115);
+          text-align: center ;
           color:white;
           font-size: 1rem;
           margin-left: 30%;
@@ -95,10 +96,17 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
        text-align: center;
        font-size:150%;
        color: rgb(131, 13, 115);
+       padding :20px;
  }
+
  #questions {
+    font-size: 120%;
     padding:20px;
  }
+
+#result { padding :20px;
+  font-size : 100%;
+}
 
     
 
@@ -110,12 +118,14 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
         width:100%;
         left:0%;
     }
-    
+
     h1 { font-size:150%;
     }
 
     #holder { width : 80%;
     }
 
+   #quiz { font-size:120%;
+  }
 
 }
