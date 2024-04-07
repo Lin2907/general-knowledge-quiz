@@ -46,7 +46,7 @@ let questions = [
     {   id : 0,
         question: "What is the longest river in the world?",
         options: ["Amazon River", "Nile", "Yellow River", "Congo River"],
-        answer: "Nile"
+        answer: "Nile",
     },
     {
         id : 1,
