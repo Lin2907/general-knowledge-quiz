@@ -118,6 +118,16 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
 
 }
 
+ #options 
+ .option-btn {
+  width : 200px;
+  background-color: rgb(131, 13, 115);
+  color:white;
+  padding:20px;
+  border-radius:10px;
+  font-size: 60%;
+}
+
     
 
 /* Smaller screens adjustment*/
