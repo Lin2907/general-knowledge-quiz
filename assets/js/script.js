@@ -108,6 +108,19 @@ document.addEventListener("DOMContentLoaded", function() {
   showQuestion();
 });
 
+// Timer set up
+let sec = 60;
+let times = setInterval(timerElement,1000);
+
+function timerElement () {
+  document.getElementById("time").innerHTML;
+sec -- ;
+if ( sec == -1) {
+  clerInterval(times);
+  alert ("Time out! :(") ;
+}
+}
+
  // Checking the answer showing the result
 
 function checkAnswer(selectedOption, currentQuestion) {
