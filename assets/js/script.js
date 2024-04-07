@@ -84,6 +84,8 @@ function showQuestion() {
       // Add the class for buttons since they does not exist in DOM  Source : https://www.w3schools.com/howto/howto_js_add_class.asp  
       button.classList.add ("option-btn") ;
       button.addEventListener("click", function () {
+      disableButtons();
+      button.disabled = false;  // enables only the button clicked
       checkAnswer(option, currentQuestion);
       });
       // Add button elements to options so they show on the page
@@ -92,7 +94,10 @@ function showQuestion() {
 }
 
  function disableButtons() {
-    document.getElementById ("btn").disabled=true;
+   let buttons= optionsElement.getElementsByTagName ("button");
+for (buttons of button) {
+  buttons.disabled = true;
+}
    }
  
 // Calling the function to show the questions
