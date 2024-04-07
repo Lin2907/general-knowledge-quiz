@@ -74,26 +74,31 @@ function showQuestion() {
   let currentQuestion = questions[currentQuestionIndex];
   questionElement.textContent = currentQuestion.question;
   optionsElement.innerHTML = "";
-  //Create and style buttons for each option , source W3 Schools "JavaScript Array forEach()"
-  currentQuestion.options.forEach(option => {
+  //Create and style buttons for each option , source Code Institute and W3 Schools "JavaScript Arrays forEach() "
+  currentQuestion.options.forEach(function (option) {
       let button = document.createElement("button"); 
       button.textContent = option;
       button.style.width ="200px"
       button.style.backgroundColor="rgb(131, 13, 115)";
-      button.style.color="white"
+      button.style.color="white";
       button.style.padding = "20px";
       button.style.borderRadius = "10px";
-      button.style.fontSize = "60%";
-      button.addEventListener("click", checkAnswer(option, currentQuestion));
+      button.style.fontSize = "60%"; 
+      button.addEventListener("click", function () {
+        checkAnswer(option, currentQuestion)
+      });
+      // Add button elements to options so they show on the page
       optionsElement.appendChild(button);
   });
 }
 // Calling the function to show the questions
+
 document.addEventListener("DOMContentLoaded", function() {
   showQuestion();
 });
 
  // Checking the answer showing the result
+
 function checkAnswer(selectedOption, currentQuestion) {
   if (selectedOption === currentQuestion.answer) {
       resultElement.textContent = "Amazing ! This is Correct!";
