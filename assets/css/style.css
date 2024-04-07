@@ -15,7 +15,6 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
     flex-direction: column;
     width: 70%;
     border : solid rgb(131, 13, 115) 10px;
-    padding :20px;
     margin : 30px auto;
     background-color:  rgb(248, 226, 248);
     }
@@ -128,6 +127,20 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
   font-size: 60%;
 }
 
+.score-area {
+  margin: auto;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: rgb(131, 13, 115);
+}
+.scores {
+  color: white;
+  font-weight: bold;
+  font-size:120%;
+  display: inline-block;
+  padding: 10px;
+}
+
     
 
 /* Smaller screens adjustment*/
@@ -147,5 +160,11 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
 
    #quiz { font-size:120%;
   }
+  .scores {
+    margin: 0.5em auto;
+    display: block;
+    padding: 5px;
+    font-size:100%;
+}
 
 }
