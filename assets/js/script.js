@@ -74,19 +74,18 @@ let currentQuestionIndex= 0;
 function showQuestion() {  
   let currentQuestion = questions[currentQuestionIndex];
   questionElement.textContent = currentQuestion.question;
-  optionsElement.innerHTML = "";
-  //Create and style buttons for each option , source Code Institute and W3 Schools "JavaScript Arrays forEach() "
+  optionsElement.innerHTML = "" ;
+
+  //Create buttons for each option , source Code Institute and W3 Schools "JavaScript Arrays forEach()"
+  
   currentQuestion.options.forEach(function (option) {
-      let button = document.createElement("button"); 
-      button.textContent = option;
-      button.style.width ="200px"
-      button.style.backgroundColor="rgb(131, 13, 115)";
-      button.style.color="white";
-      button.style.padding = "20px";
-      button.style.borderRadius = "10px";
-      button.style.fontSize = "60%"; 
+      let button = document.createElement("button");
+      button.textContent = option ;
+      // Add the class for buttons since they does not exist in DOM  Source : https://www.w3schools.com/howto/howto_js_add_class.asp  
+      button.classList.add ("option-btn") ;
       button.addEventListener("click", function () {
-        checkAnswer(option, currentQuestion)
+      checkAnswer(option, currentQuestion);
+
       });
       // Add button elements to options so they show on the page
       optionsElement.appendChild(button);
@@ -94,11 +93,9 @@ function showQuestion() {
 }
 
  function disableButtons() {
-  let btn = document.getElementsByTagName ("button");
-   for ( let btn of button) {
-    btn.disabled= true;
+    document.getElementById ("btn").disabled=true;
    }
- }
+ 
 // Calling the function to show the questions
 
 document.addEventListener("DOMContentLoaded", function() {
