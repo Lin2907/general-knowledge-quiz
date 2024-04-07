@@ -51,7 +51,7 @@ let questions = [
     {
         id : 1,
         question: "In which museum can you find Leonardo Da Vinci's Mona Lisa?",
-        options: ["Le Louvre", "Uffizi Museum", "British Museum", "Metropolitan Museum of Art"],
+        options: ["Le Louvre", "Uffizi Museum", "British Museum", "Museum of Art"],
         answer: "Le Louvre"
     },
     {   id : 2,
@@ -114,6 +114,7 @@ function checkAnswer(selectedOption, currentQuestion) {
   nextButton.addEventListener ("click", function() {
    currentQuestionIndex ++ ;
     if (currentQuestionIndex < questions.length) {
+      resultElement.textContent = "";
       showQuestion();
     }
     else {
