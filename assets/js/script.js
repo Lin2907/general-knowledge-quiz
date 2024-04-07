@@ -69,7 +69,8 @@ let feedbackElement = document.getElementById("feedback");
 // Initializing the first question with Index 0 
 let currentQuestionIndex= 0;
 
-//retrieve the current question object from an above array with questions using the currentQuestion index
+//Retrieve the current question object from an above array with questions using the currentQuestion index
+
 function showQuestion() {  
   let currentQuestion = questions[currentQuestionIndex];
   questionElement.textContent = currentQuestion.question;
@@ -107,3 +108,20 @@ function checkAnswer(selectedOption, currentQuestion) {
 
     }
   }
+
+  // Add function for the 'Next' button to show the next question
+  let nextButton = document.getElementById ("next");
+  nextButton.addEventListener ("click", function() {
+   currentQuestionIndex ++ ;
+    if (currentQuestionIndex < questions.length) {
+      showQuestion();
+    }
+    else {
+      resultElement.textContent="Quiz Completed";
+    }
+  });
+
+    showQuestion() ;
+  
+
+
