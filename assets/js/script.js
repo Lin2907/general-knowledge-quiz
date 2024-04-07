@@ -116,6 +116,8 @@ let countdown = setInterval(function() {
 sec -- ;
 // Update the button number
 timeButton.textContent = sec;
+timeButton.style.fontSize = "80%";
+timeButton.style.fontWeight="bold";
 if (sec <= 0) {
   clearInterval(countdown);
   alert("Time out! :(");
