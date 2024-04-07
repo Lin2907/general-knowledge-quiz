@@ -108,18 +108,19 @@ document.addEventListener("DOMContentLoaded", function() {
   showQuestion();
 });
 
-// Timer set up
-let sec = 60;
-let times = setInterval(timerElement,1000);
+// Timer set up -source Stack Overflow and Code institute lesson "The <script> Element"
 
-function timerElement () {
-  document.getElementById("time").innerHTML;
+let sec = 305;  // Set 5 seconds more due to loading time
+let timeButton = document.getElementById ("time");
+let countdown = setInterval(function() {
 sec -- ;
-if ( sec == -1) {
-  clerInterval(times);
-  alert ("Time out! :(") ;
+// Update the button number
+timeButton.textContent = sec;
+if (sec <= 0) {
+  clearInterval(countdown);
+  alert("Time out! :(");
 }
-}
+} , 1000 );  // run the interval every 1 second (1000ms)
 
  // Checking the answer showing the result
 

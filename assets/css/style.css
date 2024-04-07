@@ -144,6 +144,27 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
   padding: 10px;
 }
 
+#time{ width : 200px;
+  background-color: rgb(131, 13, 115);
+  padding:20px;
+  border-radius:8px;
+  color:white;
+  
+  
+}
+
+ span {  color:white;
+  font-size: 120%;
+  animation : blink 1s linear infinite;
+}
+
+
+@keyframes blink {
+  0% { opacity :0;}
+  50% { opacity: 0.5;}
+  100% { opacity : 1;}
+}
+
     
 
 /* Smaller screens adjustment*/
