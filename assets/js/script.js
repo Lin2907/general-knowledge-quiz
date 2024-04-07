@@ -32,29 +32,18 @@ window.onclick = function(event) {
 } 
 // End of W3 Schools code - adjusted
 
-// Start the Quiz button
 
-let startQuiz = document.getElementById("username");  
 
-// When clicking on Start , the username option is shown , previously hidden
+// Loading Quiz by clicking on Start and hides the start button
 
-function openStart () {
-  startQuiz.style.display ="block";
-}
 
-// Opening Quiz div by adding username 
-let getQuestions = document.getElementById ("quiz");
-
-function enterUsername()  {
+function startQuiz()  {
+    let getQuestions = document.getElementById ("quiz");
     document.getElementById("start").style.display = "none"; // Hides the start button
     getQuestions.style.display= "block";
 }
 
-// Hide the Enter button after submitted
-function hideEnter() {
-    let hideUsername = document.getElementById ("username") ;  
-    hideUsername.style.display = "none";
-   }
+
 
  
 
