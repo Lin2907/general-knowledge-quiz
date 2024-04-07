@@ -108,6 +108,16 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
   font-size : 100%;
 }
 
+#next { 
+   width: 15%;
+   padding :20px;
+   background-color: rgb(207, 130, 197) ;
+   color : white;
+   border : rgb(131, 13, 115) solid 2px;
+   border-radius: 8px;
+
+}
+
     
 
 /* Smaller screens adjustment*/
