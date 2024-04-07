@@ -85,7 +85,6 @@ function showQuestion() {
       button.classList.add ("option-btn") ;
       button.addEventListener("click", function () {
       checkAnswer(option, currentQuestion);
-
       });
       // Add button elements to options so they show on the page
       optionsElement.appendChild(button);
