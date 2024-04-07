@@ -111,7 +111,7 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
 }
 
 #next { 
-   width: 15%;
+   width: 200px;
    padding :20px;
    background-color: rgb(207, 130, 197) ;
    color : white;
