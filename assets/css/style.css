@@ -110,7 +110,12 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
         width:100%;
         left:0%;
     }
-    h1 { font-size:200%;}
+    
+    h1 { font-size:150%;
+    }
+
+    #holder { width : 80%;
+    }
 
 
 }
