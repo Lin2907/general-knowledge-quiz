@@ -92,6 +92,13 @@ function showQuestion() {
       optionsElement.appendChild(button);
   });
 }
+
+ function disableButtons() {
+  let btn = document.getElementsByTagName ("button");
+   for ( let btn of button) {
+    btn.disabled= true;
+   }
+ }
 // Calling the function to show the questions
 
 document.addEventListener("DOMContentLoaded", function() {
