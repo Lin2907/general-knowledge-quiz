@@ -41,17 +41,20 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(131, 13, 115); /* Fallback color */
     background-color: rgba(239, 219, 240, 0.207); /* Black w/ opacity */
+    
   }
   
   /* Modal Content/Box  W3 Schools*/
   .rules-content {
     background-color: rgb(131, 13, 115);
+    font-size: 1.2em;
+    border-radius: 8px;
     line-height:1.6 ;
     color: white;
     margin: 5% auto ; /* 5% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 80%; 
   }
   
   /* The Close Button */
