@@ -92,12 +92,14 @@ function showQuestion() {
       optionsElement.appendChild(button);
   });
 }
-
+  
+// Disabling the option buttons - Source W3Schools and https://flexiple.com/javascript/disable-button-javascript 
  function disableButtons() {
   let buttons = document.querySelectorAll(".option-btn");
   buttons.forEach(function(button) {
-      button.disabled = true;
-});
+  button.disabled = true;
+  });
+
    }
  
 // Calling the function to show the questions
