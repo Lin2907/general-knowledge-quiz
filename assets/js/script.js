@@ -157,6 +157,7 @@ function checkAnswer(selectedOption, currentQuestion) {
 
   // Add function for the 'Next' button to show the next question
   let nextButton = document.getElementById ("next");
+
   nextButton.addEventListener ("click", function() {
    currentQuestionIndex ++ ;
     if (currentQuestionIndex < questions.length) {
@@ -164,18 +165,46 @@ function checkAnswer(selectedOption, currentQuestion) {
       showQuestion();
     }
     else {
-      feedbackElement.textContent="Quiz Completed";
-      totalScore()
+      totalScore();
+      document.getElementById ("questions").style.display= "none";
+      document.getElementById ("feedback").style.display= "block";
+      nextButton.textContent = "Restart";  // Change the text content of Next button
+      restartQuiz() ;
     }
+   
   });
      
-    // Add function for showing how many correct and wrong answers
+    // Add function for showing how many correct answers
    function totalScore () {
     let total = parseInt(document.getElementById ("score").innerText);
     document.getElementById("feedback").textContent = "Final Score : " + total;
    }
 
-    showQuestion() ;
+// / Return to the beginning of the quiz once clicked on Next , now Restart button ???
+
+   function restartQuiz() {
+   
+    currentQuestionIndex = 0;
+    resultElement.textContent = "";
+    showQuestion();
+    document.getElementById("questions").style.display = "block"; // Getting the question back on the screen
+    document.getElementById("feedback").style.display = "none"; // Hide the feedback
+    nextButton.textContent = "Next"; // 'Restart' back to 'Next' button
+}
+
+showQuestion () ;
+
+
+
+
+
+
+
+
+
+
+
+    
   
 
 
