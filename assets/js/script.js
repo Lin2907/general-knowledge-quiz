@@ -38,8 +38,10 @@ window.onclick = function(event) {
 
 function startQuiz()  {
     let getQuestions = document.getElementById ("quiz");
+    document.getElementById ("girl-img").style.display = "none";
     document.getElementById("start").style.display = "none"; // Hides the start button
     getQuestions.style.display= "block";
+    document.getElementById ("quiz-img").style.display="block";
 }
 
 

@@ -19,14 +19,19 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
     background-color:  rgb(248, 226, 248);
     }
     
-    #board { display: flex;
+    #board { 
+        display: flex;
         padding:20px;
         }
     
-    #girl-img { position:relative;
+    #girl-img,
+    #quiz-img { position:relative;
         width:60%;
-        height:60%;
+        height:50vh;
         left:20%;
+        }
+
+        #quiz-img { display:none;
         }
     
     /* The Modal (background) */
