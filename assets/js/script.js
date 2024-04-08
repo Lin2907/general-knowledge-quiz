@@ -38,10 +38,11 @@ window.onclick = function(event) {
 
 function startQuiz()  {
     let getQuestions = document.getElementById ("quiz");
-    document.getElementById ("girl-img").style.display = "none";
-    document.getElementById("start").style.display = "none"; // Hides the start button
+    document.getElementById ("girl-img").style.display = "none";                   // Hides the image
+    document.getElementById("start").style.display = "none";                       // Hides the start button
     getQuestions.style.display= "block";
-    document.getElementById ("quiz-img").style.display="block";
+    document.getElementById ("quiz-img").style.display="block";                    // Displays the question image
+                         
 }
 
 
@@ -51,33 +52,34 @@ let questions = [
         question: "What is the longest river in the world?",
         options: ["Amazon River", "Nile", "Yellow River", "Congo River"],
         answer: "Nile",
-        imageUrl:"../assets/images/river.jpeg"
+        imageUrl:"./assets/images/river.jpeg"
     },
     {
         id : 1,
         question: "In which museum can you find Leonardo Da Vinci's Mona Lisa?",
         options: ["Le Louvre", "Uffizi Museum", "British Museum", "Museum of Art"],
         answer: "Le Louvre",
-        imageUrl: "assets/images/monalisa.jpg"
+        imageUrl: "./assets/images/monalisa.jpg"
     },
     {   id : 2,
         question: "Which one of the following islands is not in Scotland?",
         options: ["Isle of Skye", "Islay", "Isle of Mull", "Caladesi Island"],
         answer: "Caladesi Island",
-        imageUrl: "assets/images/island.jpg"
+        imageUrl: "./assets/images/island.jpg"
     },
     {  id : 3,
       question: "Who was the first woman to win a Nobel Prize?",
       options: ["Mother Teresa", "Marie Curie", "Jane Adams", "Alva Myrdal"],
       answer: "Marie Curie",
-      imageUrl: "assets/images/prize.jpg"
+      imageUrl: "./assets/images/prize.jpg"
     },
     {  id : 4,
       question: "Which Friends character’s famous pickup line is 'How you doin’?",
       options: ["Joey", "Ross", "Chandler", "Mike" ], 
       answer: "Joey"
     }
-    ]
+    ];
+
 let questionElement = document.getElementById("questions");
 let optionsElement = document.getElementById("options");
 let resultElement = document.getElementById("result");
@@ -94,7 +96,6 @@ function showQuestion() {
   questionElement.textContent = currentQuestion.question;
   imgElement.src = questions[currentQuestionIndex].imageUrl;
   optionsElement.innerHTML = "" ;
-  
 
   //Create buttons for each option , source Code Institute and W3 Schools "JavaScript Arrays forEach()"
   
@@ -189,6 +190,7 @@ function checkAnswer(selectedOption, currentQuestion) {
         document.getElementById ("options") .style.display= "none";
         document.getElementById ("result").style.display ="none";
         document.getElementById ("feedback").style.display= "block";
+        document.getElementById ("time").style.display="none";
         nextButton.textContent = "Restart";  // Change the text content of Next button
     }
 
@@ -225,9 +227,10 @@ function checkAnswer(selectedOption, currentQuestion) {
     document.getElementById ("result") .style.display = " block"
     document.getElementById("feedback").style.display = "none"; // Hide the feedback
     nextButton.textContent = "Next"; // 'Restart' back to 'Next' button
+    document.getElementById ("time").style.display ="block";
 }
 
-showQuestion () ;
+
 
 
 
