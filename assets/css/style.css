@@ -86,9 +86,22 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
           font-size: 1.2rem;
           font-weight: bold;
           margin-left: 30%;
+          letter-spacing: 2px;
           border-radius: 10px;
           width: 40%;
           padding:10px; }
+
+          /* Style buttons for hover state*/
+
+   #rules > button:hover,
+   #start:hover,
+   #next:hover  {
+          background-color: rgb(131, 13, 115);
+          color: white;
+          border: solid rgb(241, 174, 233) 5px;
+
+          }
+
 
           /*Hides the Start button */
   #start { display:none;}
@@ -113,13 +126,15 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
 
 #next { 
   float:right;
-   width: 200px;
-   padding :20px;
-   background-color: rgb(207, 130, 197) ;
-   color : white;
-   border : rgb(131, 13, 115) solid 2px;
+   width: 180px;
+   padding :10px;
+   font-size: 0.7em;
+   font-weight: bold;
+   letter-spacing: 2px;
+   background-color: transparent ;
+   color : rgb(131, 13, 115);
+   border : rgb(131, 13, 115) solid 5px;
    border-radius: 8px;
-
 }
 
  #options 
