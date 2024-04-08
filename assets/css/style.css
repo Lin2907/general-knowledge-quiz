@@ -24,15 +24,20 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
         padding:20px;
         }
     
-    #girl-img,
-    #quiz-img { position:relative;
+    #girl-img
+   { position:relative;
         width:60%;
-        height:50vh;
+        height:60%;
         left:20%;
         }
 
         #quiz-img { display:none;
-        }
+           position:relative;
+            width:60%;
+            height:60vh;
+            left:20%;
+            }
+        
     
     /* The Modal (background) */
 .open {
@@ -186,9 +191,11 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
 /* Smaller screens adjustment*/
 
 @media only screen and (max-width: 768px) {
-    #girl-img {
+    #girl-img,
+    #quiz-img {
         flex-direction: column;
         width:100%;
+        height:auto;
         left:0%;
     }
 
