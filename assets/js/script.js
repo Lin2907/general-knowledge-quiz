@@ -167,14 +167,17 @@ function checkAnswer(selectedOption, currentQuestion) {
     else {
       totalScore();
       document.getElementById ("questions").style.display= "none";
+      document.getElementById ("options") .style.display= "none";
+      document.getElementById ("result").style.display ="none";
       document.getElementById ("feedback").style.display= "block";
       nextButton.textContent = "Restart";  // Change the text content of Next button
-      restartQuiz() ;
     }
+
+   
    
   });
      
-    // Add function for showing how many correct answers
+    // Function for showing how many correct answers
    function totalScore () {
     let total = parseInt(document.getElementById ("score").innerText);
     document.getElementById("feedback").textContent = "Final Score : " + total;
@@ -188,6 +191,7 @@ function checkAnswer(selectedOption, currentQuestion) {
     resultElement.textContent = "";
     showQuestion();
     document.getElementById("questions").style.display = "block"; // Getting the question back on the screen
+    document.getElementById ("options") .style.dispplay = "block"; // Getting the options back on the screen
     document.getElementById("feedback").style.display = "none"; // Hide the feedback
     nextButton.textContent = "Next"; // 'Restart' back to 'Next' button
 }
