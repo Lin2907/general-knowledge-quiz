@@ -114,13 +114,13 @@ let sec = 305;  // Set 5 seconds more due to loading time
 let timeButton = document.getElementById ("time");
 let countdown = setInterval(function() {
 sec -- ;
-// Update the button number
+// Update the button number and add styles
 timeButton.textContent = sec;
 timeButton.style.fontSize = "80%";
 timeButton.style.fontWeight="bold";
 if (sec <= 0) {
   clearInterval(countdown);
-  alert("Time out! :(");
+  alert("Time out! :(" );
 }
 } , 1000 );  // run the interval every 1 second (1000ms)
 
@@ -164,9 +164,16 @@ function checkAnswer(selectedOption, currentQuestion) {
       showQuestion();
     }
     else {
-      resultElement.textContent="Quiz Completed";
+      feedbackElement.textContent="Quiz Completed";
+      totalScore()
     }
   });
+     
+    // Add function for showing how many correct and wrong answers
+   function totalScore () {
+    let total = parseInt(document.getElementById ("score").innerText);
+    document.getElementById("feedback").textContent = "Final Score : " + total;
+   }
 
     showQuestion() ;
   
