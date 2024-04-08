@@ -58,19 +58,19 @@ let questions = [
         question: "In which museum can you find Leonardo Da Vinci's Mona Lisa?",
         options: ["Le Louvre", "Uffizi Museum", "British Museum", "Museum of Art"],
         answer: "Le Louvre",
-        imageUrl: " ../assets/images/monalisa.jpg"
+        imageUrl: "assets/images/monalisa.jpg"
     },
     {   id : 2,
         question: "Which one of the following islands is not in Scotland?",
         options: ["Isle of Skye", "Islay", "Isle of Mull", "Caladesi Island"],
         answer: "Caladesi Island",
-        imageUrl: "../assets/images/island.jpg"
+        imageUrl: "assets/images/island.jpg"
     },
     {  id : 3,
       question: "Who was the first woman to win a Nobel Prize?",
       options: ["Mother Teresa", "Marie Curie", "Jane Adams", "Alva Myrdal"],
       answer: "Marie Curie",
-      imageUrl: "../assets/images/prize.jpg"
+      imageUrl: "assets/images/prize.jpg"
     },
     {  id : 4,
       question: "Which Friends character’s famous pickup line is 'How you doin’?",
