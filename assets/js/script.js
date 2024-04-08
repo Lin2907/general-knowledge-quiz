@@ -1,3 +1,5 @@
+
+
 // Get the modal - W3 Schools adjusted and added
 let modal = document.getElementById("myRules");
 
@@ -47,12 +49,14 @@ let questions = [
         question: "What is the longest river in the world?",
         options: ["Amazon River", "Nile", "Yellow River", "Congo River"],
         answer: "Nile",
+        imageUrl:"../assets/images/river.jpeg"
     },
     {
         id : 1,
         question: "In which museum can you find Leonardo Da Vinci's Mona Lisa?",
         options: ["Le Louvre", "Uffizi Museum", "British Museum", "Museum of Art"],
-        answer: "Le Louvre"
+        answer: "Le Louvre",
+        imageUrl: " ../assets/images/river.jpeg"
     },
     {   id : 2,
         question: "In the Big Bang Theory, what is the name of Sheldon and Leonard's neighbour?",
@@ -65,6 +69,7 @@ let questionElement = document.getElementById("questions");
 let optionsElement = document.getElementById("options");
 let resultElement = document.getElementById("result");
 let feedbackElement = document.getElementById("feedback");
+let imgElement = document.getElementById("quiz-img");
 
 // Initializing the first question with Index 0 
 let currentQuestionIndex= 0;
@@ -74,7 +79,9 @@ let currentQuestionIndex= 0;
 function showQuestion() {  
   let currentQuestion = questions[currentQuestionIndex];
   questionElement.textContent = currentQuestion.question;
+  imgElement.src = questions[currentQuestionIndex].imageUrl;
   optionsElement.innerHTML = "" ;
+  
 
   //Create buttons for each option , source Code Institute and W3 Schools "JavaScript Arrays forEach()"
   
