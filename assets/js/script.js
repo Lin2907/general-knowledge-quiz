@@ -155,27 +155,37 @@ function checkAnswer(selectedOption, currentQuestion) {
     document.getElementById("incorrect").innerText = ++oldScore;  
   }
 
+  // Function for loading the next question
+  function nextQuestion () {
+    currentQuestionIndex ++ ;
+    if (currentQuestionIndex < questions.length) {
+      resultElement.textContent = "";
+      showQuestion(); }
+      else {
+        totalScore();
+        document.getElementById ("questions").style.display= "none";
+        document.getElementById ("options") .style.display= "none";
+        document.getElementById ("result").style.display ="none";
+        document.getElementById ("feedback").style.display= "block";
+        nextButton.textContent = "Restart";  // Change the text content of Next button
+    }
+
+  }
+
   // Add function for the 'Next' button to show the next question
   let nextButton = document.getElementById ("next");
 
   nextButton.addEventListener ("click", function() {
-   currentQuestionIndex ++ ;
     if (currentQuestionIndex < questions.length) {
-      resultElement.textContent = "";
-      showQuestion();
-    }
-    else {
-      totalScore();
-      document.getElementById ("questions").style.display= "none";
-      document.getElementById ("options") .style.display= "none";
-      document.getElementById ("result").style.display ="none";
-      document.getElementById ("feedback").style.display= "block";
-      nextButton.textContent = "Restart";  // Change the text content of Next button
-    }
-
-   
-   
+      nextQuestion (); }
+    
+      else {
+        restartQuiz();
+      }
+    
   });
+    
+  
      
     // Function for showing how many correct answers
    function totalScore () {
@@ -191,7 +201,8 @@ function checkAnswer(selectedOption, currentQuestion) {
     resultElement.textContent = "";
     showQuestion();
     document.getElementById("questions").style.display = "block"; // Getting the question back on the screen
-    document.getElementById ("options") .style.dispplay = "block"; // Getting the options back on the screen
+    document.getElementById ("options").style.display = "block";
+    document.getElementById ("result") .style.display = " block"
     document.getElementById("feedback").style.display = "none"; // Hide the feedback
     nextButton.textContent = "Next"; // 'Restart' back to 'Next' button
 }
