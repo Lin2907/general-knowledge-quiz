@@ -52,7 +52,7 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
     color: white;
     margin: 5% auto ; /* 5% from the top and centered */
     padding: 20px;
-    border: 1px solid #888;
+    border: 5px solid rgb(241, 174, 233) ;
     width: 80%; 
   }
   
