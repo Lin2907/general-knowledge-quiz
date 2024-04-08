@@ -145,6 +145,14 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
   padding:20px;
   border-radius:10px;
   font-size: 60%;
+  border : solid rgb(241, 153, 230) 5px;
+}
+
+#options
+.option-btn:hover {
+  background-color: transparent;
+  color : rgb(131, 13, 115);
+  border : solid rgb(131, 13, 115) 5px;
 }
 
 .score-area {
