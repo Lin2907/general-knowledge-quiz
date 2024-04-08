@@ -110,11 +110,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Timer set up -source Stack Overflow and Code institute lesson "The <script> Element"
 
-let sec = 305;  // Set 5 seconds more due to loading time
+let sec = 303;  // Set 3 seconds more due to possible delay in loading time
 let timeButton = document.getElementById ("time");
 let countdown = setInterval(function() {
 sec -- ;
 // Update the button number and add styles
+
 timeButton.textContent = sec;
 timeButton.style.fontSize = "80%";
 timeButton.style.fontWeight="bold";
@@ -155,7 +156,8 @@ function checkAnswer(selectedOption, currentQuestion) {
     document.getElementById("incorrect").innerText = ++oldScore;  
   }
 
-  // Function for loading the next question
+  // Function - loading the next question
+
   function nextQuestion () {
     currentQuestionIndex ++ ;
     if (currentQuestionIndex < questions.length) {
@@ -172,28 +174,26 @@ function checkAnswer(selectedOption, currentQuestion) {
 
   }
 
-  // Add function for the 'Next' button to show the next question
+  // Add function for the 'Next' button to show the next question or restart the quiz
+
   let nextButton = document.getElementById ("next");
 
   nextButton.addEventListener ("click", function() {
     if (currentQuestionIndex < questions.length) {
       nextQuestion (); }
-    
-      else {
+     else {
         restartQuiz();
-      }
-    
+      } 
   });
-    
-  
      
-    // Function for showing how many correct answers
+    // Function for showing the sum of correct answers
+
    function totalScore () {
     let total = parseInt(document.getElementById ("score").innerText);
-    document.getElementById("feedback").textContent = "Final Score : " + total;
+    document.getElementById("feedback").textContent = "Final Score : " + total  +"!";
    }
 
-// / Return to the beginning of the quiz once clicked on Next , now Restart button ???
+// / Return to the beginning of the quiz once clicked on Restart
 
    function restartQuiz() {
    

@@ -78,7 +78,8 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
    
   #rules { padding:20px 0;}
 
-  #rules > button , #start { 
+  #rules > button ,
+  #start { 
           background-color: transparent;
           border :solid  rgb(131, 13, 115) 5px;
           text-align: center ;
@@ -113,17 +114,15 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
        padding :20px;
  }
 
- #questions {
+ #questions,
+ #result,
+ #feedback {
     font-size: 120%;
     padding:20px;
  }
 
-#result { padding :20px;
-  font-size : 100%;
-}
-
 #next { 
-  float:right;
+   float:right;
    width: 180px;
    padding :10px;
    font-size: 0.7em;
@@ -152,7 +151,6 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
   color : rgb(131, 13, 115);
   border : solid rgb(131, 13, 115) 5px;
 }
-
 .score-area {
   margin: auto;
   font-size: 1.2rem;
@@ -195,14 +193,30 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
       border: solid rgb(131, 13, 115) 5px;
     }
 
-    #rules > button { 
+    #rules > button ,
+    #start { 
       padding:10px;
+      letter-spacing:1px;
+      font-size: 80%;
+      font-weight: bold;
       width:50%;
       margin-left:25%;
     }
 
-   #quiz { font-size:120%;
-  }
+    #questions,
+    #result,
+    #feedback {
+    font-size: 80%;
+    font-weight: bold;
+    padding:20px;
+ }
+ #options 
+ .option-btn,
+ #next { display: flex;
+        flex-direction: column;
+         
+         width:100%;}
+
   .scores {
     margin: 0.5em auto;
     display: block;
