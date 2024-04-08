@@ -61,12 +61,18 @@ let questions = [
         imageUrl: " ../assets/images/monalisa.jpg"
     },
     {   id : 2,
-        question: "In the Big Bang Theory, what is the name of Sheldon and Leonard's neighbour?",
-        options: ["Penny", "Patty", "Lily", "Jessie"],
-        answer: "Penny"
-    }
-  ];
-
+        question: "Which one of the following islands is not in Scotland?",
+        options: ["Isle of Skye", "Islay", "Isle of Mull", "Caladesi Island"],
+        answer: "Caladesi Island",
+        imageUrl: "../assets/images/island.jpg"
+    },
+    {  id : 3,
+      question: "Who was the first woman to win a Nobel Prize?",
+      options: ["Mother Teresa", "Marie Curie", "Jane Adams", "Alva Myrdal"],
+      answer: "Marie Curie",
+      imageUrl: "../assets/images/prize.jpg"
+    },
+    ]
 let questionElement = document.getElementById("questions");
 let optionsElement = document.getElementById("options");
 let resultElement = document.getElementById("result");
