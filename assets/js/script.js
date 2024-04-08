@@ -72,6 +72,11 @@ let questions = [
       answer: "Marie Curie",
       imageUrl: "../assets/images/prize.jpg"
     },
+    {  id : 4,
+      question: "Which Friends character’s famous pickup line is 'How you doin’?",
+      options: ["Joey", "Ross", "Chandler", "Mike" ], 
+      answer: "Joey"
+    }
     ]
 let questionElement = document.getElementById("questions");
 let optionsElement = document.getElementById("options");
