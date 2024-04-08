@@ -34,8 +34,9 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
         #quiz-img { display:none;
            position:relative;
             width:60%;
-            height:60vh;
-            left:20%;
+            height:60%;
+            left :20%;
+           
             }
         
     
