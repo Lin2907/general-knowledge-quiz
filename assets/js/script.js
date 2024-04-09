@@ -41,7 +41,7 @@ function startQuiz()  {
     let getQuestions = document.getElementById ("quiz");
     document.getElementById ("girl-img").style.display = "none";                   // Hides the image
     document.getElementById("start").style.display = "none";
-    openButton .style.display = "none";                      // Hides the start button
+    openButton.style.display = "none";                      // Hides the start button
     getQuestions.style.display= "block";
     document.getElementById ("quiz-img").style.display="block";                    // Displays the question image
                          
