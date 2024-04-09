@@ -95,6 +95,7 @@ let currentQuestionIndex= 0;
 
 function showQuestion() {  
     setTimer();
+    resetScore();
   let currentQuestion = questions[currentQuestionIndex];
   questionElement.textContent = currentQuestion.question;
   imgElement.src = questions[currentQuestionIndex].imageUrl;
@@ -243,7 +244,7 @@ function checkAnswer(selectedOption, currentQuestion) {
     document.getElementById("feedback").style.display = "none"; // Hide the feedback
     nextButton.textContent = "Next"; // 'Restart' back to 'Next' button
     resetTimer();
-    resetScore();
+    
 }
     
 
