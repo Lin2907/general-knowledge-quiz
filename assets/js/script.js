@@ -39,6 +39,9 @@ window.onclick = function(event) {
 // Loading Quiz by clicking on Start and hides the start button
 
 function startQuiz()  {
+    resetTimer ();
+    resetScore();
+    startTimer();
     let getQuestions = document.getElementById ("quiz");
     document.getElementById ("girl-img").style.display = "none";                   // Hides the image
     document.getElementById("start").style.display = "none";                       // Hides the start button
