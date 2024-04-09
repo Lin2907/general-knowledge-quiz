@@ -96,7 +96,7 @@ let currentQuestionIndex= 0;
 //Retrieve the current question object from an above array with questions using the currentQuestion index
 
 function showQuestion() {  
-    setTimer();
+  setTimer ();
   let currentQuestion = questions[currentQuestionIndex];
   questionElement.textContent = currentQuestion.question;
   imgElement.src = questions[currentQuestionIndex].imageUrl;
@@ -150,6 +150,7 @@ if (sec <= 0  || currentQuestionIndex >= questions.length) {       // Add the co
   clearInterval(countdown);
    disableButtons();
 }
+
 }, 1000 );  // run the interval every 1 second (1000ms)
 }
 
@@ -164,9 +165,11 @@ function checkAnswer(selectedOption, currentQuestion) {
   if (selectedOption === currentQuestion.answer) {
       resultElement.textContent = "Amazing ! This is Correct!";
       incrementScore();
+      
     } else {
       resultElement.textContent = "Awwww, wrong! The correct answer is: " + currentQuestion.answer;
       incrementWrongAnswer();
+      
     }
   }
 
@@ -245,7 +248,7 @@ function checkAnswer(selectedOption, currentQuestion) {
     document.getElementById ("result") .style.display = " block"
     document.getElementById("feedback").style.display = "none"; // Hide the feedback
     nextButton.textContent = "Next"; // 'Restart' back to 'Next' button
-    resetTimer();
+   
     
     
 }
