@@ -140,9 +140,10 @@ sec -- ;
 timeButton.textContent = sec;
 timeButton.style.fontSize = "80%";
 timeButton.style.fontWeight="bold";
-if (sec <= 0) {
+if (sec <= 0  || currentQuestionIndex > questions.length) {       // Add the condition for timer to reset
   clearInterval(countdown);
-  alert("Time out! :(" );
+  alert("Time out! :(" )
+   disableButtons();
 }
 } , 1000 );  // run the interval every 1 second (1000ms)
 
@@ -190,7 +191,6 @@ function checkAnswer(selectedOption, currentQuestion) {
         document.getElementById ("options") .style.display= "none";
         document.getElementById ("result").style.display ="none";
         document.getElementById ("feedback").style.display= "block";
-        document.getElementById ("time").style.display="none";
         nextButton.textContent = "Restart";  // Change the text content of Next button
     }
 
@@ -214,6 +214,9 @@ function checkAnswer(selectedOption, currentQuestion) {
     let total = parseInt(document.getElementById ("score").innerText);
     document.getElementById("feedback").textContent = "Final Score : " + total  +"!";
    }
+   
+   let startButton = document.getElementById ("start").style.display = "block";
+   startButton.addEventListener("click", restartQuiz()) ;
 
 // / Return to the beginning of the quiz once clicked on Restart
 
@@ -221,14 +224,16 @@ function checkAnswer(selectedOption, currentQuestion) {
    
     currentQuestionIndex = 0;
     resultElement.textContent = "";
-    showQuestion();
+    startQuiz();
     document.getElementById("questions").style.display = "block"; // Getting the question back on the screen
     document.getElementById ("options").style.display = "block";
     document.getElementById ("result") .style.display = " block"
+    document.getElementById ("start").style.display = "block";
     document.getElementById("feedback").style.display = "none"; // Hide the feedback
     nextButton.textContent = "Next"; // 'Restart' back to 'Next' button
-    document.getElementById ("time").style.display ="block";
+    
 }
+    
 
 
 
