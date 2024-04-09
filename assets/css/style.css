@@ -84,7 +84,11 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
   }
   
   /* End of W3 Schools style - adjusted */
-
+   
+  #start {
+    display:none;
+  }
+  
   #username { display:none;
   }  /* Hides the username until start is clicked*/
    

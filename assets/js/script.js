@@ -9,6 +9,9 @@ let openButton = document.getElementById("rules");
 // Get the <span> element that closes the modal
 let span = document.getElementsByClassName("close")[0];
 
+// Get the start button , previously hidden
+let startButton = document.getElementById ("start");
+
 let holder = document.getElementById("holder");
 
 
@@ -20,7 +23,8 @@ rules.onclick = function() {
 // When the user clicks on <span> (x), close the modal and open Start button
 span.onclick = function() {
   modal.style.display = "none";
-  openButton.style.display="none";
+  startButton.style.display="block";
+  openButton .style.display="none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
@@ -41,7 +45,7 @@ function startQuiz()  {
     let getQuestions = document.getElementById ("quiz");
     document.getElementById ("girl-img").style.display = "none";                   // Hides the image
     document.getElementById("start").style.display = "none";
-    openButton.style.display = "none";                      // Hides the start button
+    startButton.style.display = "none";                      // Hides the start button
     getQuestions.style.display= "block";
     document.getElementById ("quiz-img").style.display="block";                    // Displays the question image
                          
