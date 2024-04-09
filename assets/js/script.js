@@ -77,7 +77,7 @@ let questions = [
       question: "Who was the first woman to win a Nobel Prize?",
       options: ["Mother Teresa", "Marie Curie", "Jane Adams", "Alva Myrdal"],
       answer: "Marie Curie",
-      imageUrl: "./assets/images/prize.jpg"
+      imageUrl: "./assets/images/puzzle.jpg"
     },
     {  id : 4,
       question: "Which Friends character's famous pickup line is How you doin'?",
