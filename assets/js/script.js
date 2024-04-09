@@ -39,7 +39,7 @@ window.onclick = function(event) {
 // Loading Quiz by clicking on Start and hides the start button
 
 function startQuiz()  {
-    
+
     let getQuestions = document.getElementById ("quiz");
     document.getElementById ("girl-img").style.display = "none";                   // Hides the image
     document.getElementById("start").style.display = "none";                       // Hides the start button
@@ -95,7 +95,6 @@ let currentQuestionIndex= 0;
 //Retrieve the current question object from an above array with questions using the currentQuestion index
 
 function showQuestion() {  
-    resetScore();
     setTimer();
   let currentQuestion = questions[currentQuestionIndex];
   questionElement.textContent = currentQuestion.question;
@@ -203,6 +202,7 @@ function checkAnswer(selectedOption, currentQuestion) {
         document.getElementById ("result").style.display ="none";
         document.getElementById ("feedback").style.display= "block";
         nextButton.textContent = "Restart";  // Change the text content of Next button
+        resetScore();
   };
 
   }
@@ -223,7 +223,7 @@ function checkAnswer(selectedOption, currentQuestion) {
 
    function totalScore () {
     let total = parseInt(document.getElementById ("score").innerText);
-    document.getElementById("feedback").textContent = "Final Score : " + total  +"!";
+    document.getElementById("feedback").textContent = "Final Score : " + total  +" Correct Answers!";
    }
 
    function resetScore() {
@@ -245,6 +245,7 @@ function checkAnswer(selectedOption, currentQuestion) {
     document.getElementById("feedback").style.display = "none"; // Hide the feedback
     nextButton.textContent = "Next"; // 'Restart' back to 'Next' button
     resetTimer();
+    
     
 }
     
