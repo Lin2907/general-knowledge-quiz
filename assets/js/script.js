@@ -11,6 +11,7 @@ let span = document.getElementsByClassName("close")[0];
 
 let holder = document.getElementById("holder");
 
+
 // When the user clicks on the button, open the modal
 rules.onclick = function() {
   modal.style.display = "block";
@@ -39,7 +40,8 @@ function startQuiz()  {
 
     let getQuestions = document.getElementById ("quiz");
     document.getElementById ("girl-img").style.display = "none";                   // Hides the image
-    document.getElementById("start").style.display = "none";                       // Hides the start button
+    document.getElementById("start").style.display = "none";
+    openButton .style.display = "none";                      // Hides the start button
     getQuestions.style.display= "block";
     document.getElementById ("quiz-img").style.display="block";                    // Displays the question image
                          
