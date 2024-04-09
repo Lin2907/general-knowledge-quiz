@@ -215,8 +215,6 @@ function checkAnswer(selectedOption, currentQuestion) {
     document.getElementById("feedback").textContent = "Final Score : " + total  +"!";
    }
    
-   let startButton = document.getElementById ("start").style.display = "block";
-   startButton.addEventListener("click", restartQuiz()) ;
 
 // / Return to the beginning of the quiz once clicked on Restart
 
@@ -228,7 +226,6 @@ function checkAnswer(selectedOption, currentQuestion) {
     document.getElementById("questions").style.display = "block"; // Getting the question back on the screen
     document.getElementById ("options").style.display = "block";
     document.getElementById ("result") .style.display = " block"
-    document.getElementById ("start").style.display = "block";
     document.getElementById("feedback").style.display = "none"; // Hide the feedback
     nextButton.textContent = "Next"; // 'Restart' back to 'Next' button
     
