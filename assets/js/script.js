@@ -39,9 +39,6 @@ window.onclick = function(event) {
 // Loading Quiz by clicking on Start and hides the start button
 
 function startQuiz()  {
-    resetTimer ();
-    resetScore();
-    startTimer();
     let getQuestions = document.getElementById ("quiz");
     document.getElementById ("girl-img").style.display = "none";                   // Hides the image
     document.getElementById("start").style.display = "none";                       // Hides the start button
@@ -97,6 +94,7 @@ let currentQuestionIndex= 0;
 //Retrieve the current question object from an above array with questions using the currentQuestion index
 
 function showQuestion() {  
+    setTimer();
   let currentQuestion = questions[currentQuestionIndex];
   questionElement.textContent = currentQuestion.question;
   imgElement.src = questions[currentQuestionIndex].imageUrl;
