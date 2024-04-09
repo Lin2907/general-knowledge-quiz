@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function setTimer() {
 
-let sec = 303;  // Set 3 seconds more due to possible delay in loading time
+let sec = 300;  
 let timeButton = document.getElementById ("time");
 let countdown = setInterval(function() {
 sec -- ;
@@ -146,7 +146,6 @@ timeButton.style.fontSize = "80%";
 timeButton.style.fontWeight="bold";
 if (sec <= 0  || currentQuestionIndex >= questions.length) {       // Add the condition for timer to reset
   clearInterval(countdown);
-  alert("Time out! :(" )
    disableButtons();
 }
 } , 1000 );  // run the interval every 1 second (1000ms)
@@ -154,7 +153,7 @@ if (sec <= 0  || currentQuestionIndex >= questions.length) {       // Add the co
 
 function resetTimer() {
   clearInterval(countdown);
-  sec=303;
+  sec=300;
 }
 
  // Checking the answer showing the result
@@ -243,7 +242,8 @@ function checkAnswer(selectedOption, currentQuestion) {
     document.getElementById ("result") .style.display = " block"
     document.getElementById("feedback").style.display = "none"; // Hide the feedback
     nextButton.textContent = "Next"; // 'Restart' back to 'Next' button
-    
+    resetTimer();
+    resetScore();
 }
     
 
