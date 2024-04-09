@@ -39,6 +39,7 @@ window.onclick = function(event) {
 // Loading Quiz by clicking on Start and hides the start button
 
 function startQuiz()  {
+    
     let getQuestions = document.getElementById ("quiz");
     document.getElementById ("girl-img").style.display = "none";                   // Hides the image
     document.getElementById("start").style.display = "none";                       // Hides the start button
@@ -94,8 +95,8 @@ let currentQuestionIndex= 0;
 //Retrieve the current question object from an above array with questions using the currentQuestion index
 
 function showQuestion() {  
-    setTimer();
     resetScore();
+    setTimer();
   let currentQuestion = questions[currentQuestionIndex];
   questionElement.textContent = currentQuestion.question;
   imgElement.src = questions[currentQuestionIndex].imageUrl;
@@ -137,7 +138,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function setTimer() {
 
-let sec = 300;  
+let sec = 300; 
 let timeButton = document.getElementById ("time");
 let countdown = setInterval(function() {
 sec -- ;
@@ -149,7 +150,7 @@ if (sec <= 0  || currentQuestionIndex >= questions.length) {       // Add the co
   clearInterval(countdown);
    disableButtons();
 }
-} , 1000 );  // run the interval every 1 second (1000ms)
+}, 1000 );  // run the interval every 1 second (1000ms)
 }
 
 function resetTimer() {
