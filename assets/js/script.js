@@ -32,6 +32,8 @@ window.onclick = function(event) {
 
   }
 } 
+
+
 // End of W3 Schools code - adjusted
 
 // Loading Quiz by clicking on Start and hides the start button
@@ -192,7 +194,7 @@ function checkAnswer(selectedOption, currentQuestion) {
         document.getElementById ("result").style.display ="none";
         document.getElementById ("feedback").style.display= "block";
         nextButton.textContent = "Restart";  // Change the text content of Next button
-    }
+  };
 
   }
 
@@ -222,7 +224,7 @@ function checkAnswer(selectedOption, currentQuestion) {
    
     currentQuestionIndex = 0;
     resultElement.textContent = "";
-    startQuiz();
+    showQuestion();
     document.getElementById("questions").style.display = "block"; // Getting the question back on the screen
     document.getElementById ("options").style.display = "block";
     document.getElementById ("result") .style.display = " block"
