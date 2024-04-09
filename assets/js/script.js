@@ -11,7 +11,6 @@ let span = document.getElementsByClassName("close")[0];
 
 let holder = document.getElementById("holder");
 
-let button = document.getElementById ("start");
 // When the user clicks on the button, open the modal
 rules.onclick = function() {
   modal.style.display = "block";
@@ -21,8 +20,6 @@ rules.onclick = function() {
 span.onclick = function() {
   modal.style.display = "none";
   openButton.style.display="none";
-  button.style.display = "block";
-
 }
 
 // When the user clicks anywhere outside of the modal, close it

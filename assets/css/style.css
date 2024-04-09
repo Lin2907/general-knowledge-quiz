@@ -112,11 +112,8 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
           background-color: rgb(131, 13, 115);
           color: white;
           border: solid rgb(241, 174, 233) 5px;
-     }
-
-/*Hides the Start button */
-  #start { display:none;}
-
+           }
+           
   /*Quiz questions /answers style*/
   
 #quiz { display: none;
