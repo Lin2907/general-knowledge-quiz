@@ -84,8 +84,37 @@ let questions = [
       options: ["Joey", "Ross", "Chandler", "Mike" ], 
       answer: "Joey",
       imageUrl: "./assets/images/friends.jpg"
-    }
-    ];
+    },
+    { id : 5,
+      question : "How many strings has a standard bass guitar?",
+      options : [ "3" , "4", "5" , "6"],
+      answer : "4"
+    },
+
+    { id : 6 ,
+    question: "What's Garfield favourite food?" ,
+    options: ["Pizza" , "Lasagna" , "Burger", "Sandwich"],
+    answer: "Lasagna"
+  },
+  { id :7,
+   question:"Which country is the top producer of coffee?",
+  options: ["Colombia" ,"Ivory Coast" , "Brazil" , "Argentina" ],
+  answer: "Brazil" 
+
+},
+  { id : 8 ,
+  question : "Which of the following is the largest city?",
+  options : [" Tokyo", "New York", "London" , "Rome"] ,
+  answer: "Tokyo"
+  },
+
+  { id:9,
+  question :"Who is the Greek goddess of beauty?",
+  options: ["Aphrodite" , "Demeter" , "Hestia" , "Athena"],
+  answer : "Aphrodite"
+}
+
+];
 
 let questionElement = document.getElementById("questions");
 let optionsElement = document.getElementById("options");
