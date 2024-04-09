@@ -77,9 +77,10 @@ let questions = [
       imageUrl: "./assets/images/prize.jpg"
     },
     {  id : 4,
-      question: "Which Friends character’s famous pickup line is 'How you doin’?",
+      question: "Which Friends character's famous pickup line is How you doin'?",
       options: ["Joey", "Ross", "Chandler", "Mike" ], 
-      answer: "Joey"
+      answer: "Joey",
+      imageUrl: "./assets/images/friends.jpg"
     }
     ];
 
