@@ -88,30 +88,34 @@ let questions = [
     { id : 5,
       question : "How many strings has a standard bass guitar?",
       options : [ "3" , "4", "5" , "6"],
-      answer : "4"
+      answer : "4",
+      imageUrl: "./assets/images/guitar.png"
     },
 
     { id : 6 ,
     question: "What's Garfield favourite food?" ,
     options: ["Pizza" , "Lasagna" , "Burger", "Sandwich"],
-    answer: "Lasagna"
+    answer: "Lasagna",
+    imageUrl : "./assets/images/garfield.png"
   },
   { id :7,
    question:"Which country is the top producer of coffee?",
-  options: ["Colombia" ,"Ivory Coast" , "Brazil" , "Argentina" ],
-  answer: "Brazil" 
-
+   options: ["Colombia" ,"Ivory Coast" , "Brazil" , "Argentina" ],
+   answer: "Brazil",
+   imageUrl : "./assets/images/coffee.png"
 },
   { id : 8 ,
   question : "Which of the following is the largest city?",
-  options : [" Tokyo", "New York", "London" , "Rome"] ,
-  answer: "Tokyo"
+  options : ["Tokyo", "New York", "London" , "Rome"] ,
+  answer: "Tokyo",
+  imageUrl : "./assets/images/city.jpg"
   },
 
   { id:9,
   question :"Who is the Greek goddess of beauty?",
   options: ["Aphrodite" , "Demeter" , "Hestia" , "Athena"],
-  answer : "Aphrodite"
+  answer : "Aphrodite",
+  imageUrl : "./assets/images/greece.jpg"
 }
 
 ];
