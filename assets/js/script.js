@@ -131,23 +131,30 @@ document.addEventListener("DOMContentLoaded", function() {
   showQuestion();
 });
 
-// Timer set up -source Stack Overflow and Code institute lesson "The <script> Element"
+//  Function Timer set up -source Stack Overflow and Code institute lesson "The <script> Element"
+
+function setTimer() {
 
 let sec = 303;  // Set 3 seconds more due to possible delay in loading time
 let timeButton = document.getElementById ("time");
 let countdown = setInterval(function() {
 sec -- ;
 // Update the button number and add styles
-
 timeButton.textContent = sec;
 timeButton.style.fontSize = "80%";
 timeButton.style.fontWeight="bold";
-if (sec <= 0  || currentQuestionIndex > questions.length) {       // Add the condition for timer to reset
+if (sec <= 0  || currentQuestionIndex >= questions.length) {       // Add the condition for timer to reset
   clearInterval(countdown);
   alert("Time out! :(" )
    disableButtons();
 }
 } , 1000 );  // run the interval every 1 second (1000ms)
+}
+
+function resetTimer() {
+  clearInterval(countdown);
+  sec=303;
+}
 
  // Checking the answer showing the result
 
@@ -198,7 +205,7 @@ function checkAnswer(selectedOption, currentQuestion) {
 
   }
 
-  // Add function for the 'Next' button to show the next question or restart the quiz
+  // Function for the 'Next' button to show the next question or restart the quiz
 
   let nextButton = document.getElementById ("next");
 
@@ -215,6 +222,11 @@ function checkAnswer(selectedOption, currentQuestion) {
    function totalScore () {
     let total = parseInt(document.getElementById ("score").innerText);
     document.getElementById("feedback").textContent = "Final Score : " + total  +"!";
+   }
+
+   function resetScore() {
+    document.getElementById("score").innerText = "0";
+    document.getElementById("incorrect").innerText = "0";
    }
    
 
