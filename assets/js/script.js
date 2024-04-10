@@ -21,21 +21,12 @@ rules.onclick = function() {
 }
 
 // When the user clicks on <span> (x), close the modal and open Start button
-span.onclick = function() {
+  span.onclick = function() {
+
   modal.style.display = "none";
   openButton .style.display="none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-
   }
-} 
 
-
-// End of W3 Schools code - adjusted
 
 // Loading Quiz Modal
 
@@ -53,6 +44,7 @@ function toggleQuizModal()  {
 // By clicking on Start button loads the quiz modal , the question and starts the timer
 
 function startQuiz() {
+
   showQuestion() ;
   toggleQuizModal();
   setTimer();
