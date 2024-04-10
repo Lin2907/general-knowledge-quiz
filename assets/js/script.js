@@ -47,7 +47,8 @@ function startQuiz()  {
     document.getElementById("start").style.display = "none";
     startButton.style.display = "none";                      // Hides the start button
     getQuestions.style.display= "block";
-    document.getElementById ("quiz-img").style.display="block";                    // Displays the question image
+    document.getElementById ("quiz-img").style.display="block";   // Displays the quiz image
+    setTimer ();                 
                          
 }
 
@@ -132,7 +133,6 @@ let currentQuestionIndex= 0;
 //Retrieve the current question object from an above array with questions using the currentQuestion index
 
 function showQuestion() {  
-  setTimer ();
   let currentQuestion = questions[currentQuestionIndex];
   questionElement.textContent = currentQuestion.question;
   imgElement.src = questions[currentQuestionIndex].imageUrl;
