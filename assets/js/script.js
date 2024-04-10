@@ -23,7 +23,6 @@ rules.onclick = function() {
 // When the user clicks on <span> (x), close the modal and open Start button
 span.onclick = function() {
   modal.style.display = "none";
-  startButton.style.display="block";
   openButton .style.display="none";
 }
 
@@ -38,18 +37,25 @@ window.onclick = function(event) {
 
 // End of W3 Schools code - adjusted
 
-// Loading Quiz by clicking on Start and hides the start button
+// Loading Quiz Modal
 
-function startQuiz()  {
+function toggleQuizModal()  {
 
     let getQuestions = document.getElementById ("quiz");
     document.getElementById ("girl-img").style.display = "none";                   // Hides the image
     document.getElementById("start").style.display = "none";
     startButton.style.display = "none";                      // Hides the start button
     getQuestions.style.display= "block";
-    document.getElementById ("quiz-img").style.display="block";   // Displays the quiz image
-    setTimer ();                 
+    document.getElementById ("quiz-img").style.display="block";   // Displays the quiz image               
                          
+}
+
+// By clicking on Start button loads the quiz modal , the question and starts the timer
+
+function startQuiz() {
+  showQuestion() ;
+  toggleQuizModal();
+  setTimer();
 }
 
 
@@ -170,9 +176,9 @@ document.addEventListener("DOMContentLoaded", function() {
   showQuestion();
 });
 
-//  Function Timer set up -source Stack Overflow and Code institute lesson "The <script> Element"
+//  Timer set up 
 
-function setTimer() {
+function setTimer () {
 
 let sec = 300; 
 let timeButton = document.getElementById ("time");
@@ -190,7 +196,9 @@ if (sec <= 0  || currentQuestionIndex >= questions.length) {       // Add the co
 }, 1000 );  // run the interval every 1 second (1000ms)
 }
 
+// Reseting the timer
 function resetTimer() {
+
   clearInterval(countdown);
   sec=300;
 }
@@ -278,12 +286,14 @@ function checkAnswer(selectedOption, currentQuestion) {
    
     currentQuestionIndex = 0;
     resultElement.textContent = "";
-    showQuestion();
+    startQuiz();
     document.getElementById("questions").style.display = "block"; // Getting the question back on the screen
     document.getElementById ("options").style.display = "block";
     document.getElementById ("result") .style.display = " block"
+    document.getElementById ("start").style.display= "block"
     document.getElementById("feedback").style.display = "none"; // Hide the feedback
     nextButton.textContent = "Next"; // 'Restart' back to 'Next' button
+    resetTimer();
    
     
     
