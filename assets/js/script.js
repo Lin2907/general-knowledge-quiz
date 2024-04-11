@@ -27,6 +27,23 @@ rules.onclick = function() {
   openButton .style.display="none";
   }
 
+  // Shuffle function to randomize questions array using Durstenfeld / Fisher-Yates shuffle 
+
+function shuffleArray(array) {
+
+  for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array.slice(0, 10);       // Slice the array to contain only the first 10 random indexes
+}
+
+// When the document is loaded, shuffle the questions
+
+document.addEventListener("DOMContentLoaded", function() {
+  questions = shuffleArray(questions);
+});
+
 
 // Loading Quiz Modal
 
@@ -172,23 +189,23 @@ let resultElement = document.getElementById("result");
 let feedbackElement = document.getElementById("feedback");
 let imgElement = document.getElementById("quiz-img");
 
-// Initializing the first question with Index 0 
-let currentQuestionIndex= 0;
+// First question
+let currentQuestionNum= 0;
 
 //Retrieve the current question object from an above array with questions using the currentQuestion index
 
 function showQuestion() {  
-  let currentQuestion = questions[currentQuestionIndex];
+  if (currentQuestionNum < questions.length) {
+  let currentQuestion = questions[currentQuestionNum];
   questionElement.textContent = currentQuestion.question;
-  imgElement.src = questions[currentQuestionIndex].imageUrl;
+  imgElement.src = questions[currentQuestionNum].imageUrl;
   optionsElement.innerHTML = "" ;
 
-  //Create buttons for each option , source Code Institute and W3 Schools "JavaScript Arrays forEach()"
+  //Create button element for each option
   
   currentQuestion.options.forEach(function (option) {
       let button = document.createElement("button");
       button.textContent = option ;
-      // Add the class for buttons since they does not exist in DOM  Source : https://www.w3schools.com/howto/howto_js_add_class.asp  
       button.classList.add ("option-btn") ;
       button.addEventListener("click", function () {
       checkAnswer(option, currentQuestion);
@@ -198,7 +215,13 @@ function showQuestion() {
       // Add button elements to options so they show on the page
       optionsElement.appendChild(button);
   });
+
+}   else {
+  restartQuiz () ;
+ }
 }
+
+
   
 // Disabling the option buttons - Source W3Schools and https://flexiple.com/javascript/disable-button-javascript 
  function disableButtons() {
@@ -206,8 +229,8 @@ function showQuestion() {
   buttons.forEach(function(button) {
   button.disabled = true;
   });
-
-   }
+}
+  
  
 // Calling the function to show the questions
 
@@ -278,8 +301,8 @@ function checkAnswer(selectedOption, currentQuestion) {
   // Function - loading the next question
 
   function nextQuestion () {
-    currentQuestionIndex ++ ;
-    if (currentQuestionIndex < questions.length) {
+    currentQuestionNum ++ ;
+    if (currentQuestionNum < questions.length) {
       resultElement.textContent = "";
       showQuestion(); }
       else {
@@ -299,7 +322,7 @@ function checkAnswer(selectedOption, currentQuestion) {
   let nextButton = document.getElementById ("next");
 
   nextButton.addEventListener ("click", function() {
-    if (currentQuestionIndex < questions.length) {
+    if (currentQuestionNum < questions.length) {
       nextQuestion (); }
      else {
         restartQuiz();
@@ -322,14 +345,14 @@ function checkAnswer(selectedOption, currentQuestion) {
 // / Return to the beginning of the quiz once clicked on Restart
 
    function restartQuiz() {
-   
-    currentQuestionIndex = 0;
+
+    currentQuestionNum = 0
     resultElement.textContent = "";
-    startQuiz();
+    startQuiz ();
+    showQuestion() ;
     document.getElementById("questions").style.display = "block"; // Getting the question back on the screen
     document.getElementById ("options").style.display = "block";
-    document.getElementById ("result") .style.display = " block"
-    document.getElementById ("start").style.display= "block"
+    document.getElementById ("result") .style.display = " block";
     document.getElementById("feedback").style.display = "none"; // Hide the feedback
     nextButton.textContent = "Next"; // 'Restart' back to 'Next' button
     resetTimer();
