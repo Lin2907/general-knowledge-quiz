@@ -41,10 +41,14 @@ function toggleQuizModal()  {
                          
 }
 
-// By clicking on Start button loads the quiz modal , the question and starts the timer
+// By clicking on Start button loads the quiz modal , the question and starts the timer , if modal opened, closes the modal
 
 function startQuiz() {
 
+  if (rules.style.display = "block") { 
+   rules.style.display = "none";
+   modal.style.display = "none";
+  }
   showQuestion() ;
   toggleQuizModal();
   setTimer();
@@ -53,7 +57,7 @@ function startQuiz() {
 
 // Adding questions - Question source : https://www.quiztriviagames.com/multiple-choice-trivia-questions/
 let questions = [
-    {   id : 0,
+    {   id : 0 ,
         question: "What is the longest river in the world?",
         options: ["Amazon River", "Nile", "Yellow River", "Congo River"],
         answer: "Nile",
