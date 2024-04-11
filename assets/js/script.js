@@ -1,5 +1,3 @@
-
-
 // Get the modal - W3 Schools adjusted and added
 let modal = document.getElementById("myRules");
 
@@ -27,7 +25,7 @@ rules.onclick = function() {
   openButton .style.display="none";
   }
 
-  // Shuffle function to randomize questions array using Durstenfeld / Fisher-Yates shuffle 
+  // Shuffle function to randomize questions array - Durstenfeld / Fisher-Yates shuffle 
 
 function shuffleArray(array) {
 
@@ -179,8 +177,6 @@ options: ["Joey", "Ross", "Chandler", "Mike" ],
 answer: "Joey",
 imageUrl: "./assets/images/friends.jpg"
 },
-
-
 ];
 
 let questionElement = document.getElementById("questions");
@@ -210,9 +206,9 @@ function showQuestion() {
       button.addEventListener("click", function () {
       checkAnswer(option, currentQuestion);
       disableButtons();
-      
       });
-      // Add button elements to options so they show on the page
+
+  // Add button elements to options so they show on the page
       optionsElement.appendChild(button);
   });
 
@@ -220,17 +216,15 @@ function showQuestion() {
   restartQuiz () ;
  }
 }
-
-
   
 // Disabling the option buttons - Source W3Schools and https://flexiple.com/javascript/disable-button-javascript 
  function disableButtons() {
+
   let buttons = document.querySelectorAll(".option-btn");
   buttons.forEach(function(button) {
   button.disabled = true;
   });
 }
-  
  
 // Calling the function to show the questions
 
@@ -239,7 +233,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 //  Timer set up 
-
 function setTimer () {
 
 let sec = 300; 
@@ -268,23 +261,27 @@ function resetTimer() {
 
  // Checking the answer showing the result
 
-function checkAnswer(selectedOption, currentQuestion) {
+function checkAnswer(selectedOption, currentQuestion)
+ {
   if (selectedOption === currentQuestion.answer) {
+
       resultElement.textContent = "Amazing ! This is Correct!";
+      resultElement.style.borderBottom = "solid green 5px";
       incrementScore();
       
     } else {
-      resultElement.textContent = "Awwww, wrong! The correct answer is: " + currentQuestion.answer;
+
+      resultElement.textContent = "Awwww, Wrong Answer!"
+      resultElement.style.borderBottom = "solid pink 5px";
       incrementWrongAnswer();
-      
     }
   }
 
-   // Source Code Institute Love Math Project 
+  // Source Code Institute Love Math Project 
 
   function incrementScore() {
 
-    // Gets the current score from the DOM and increments it
+// Gets the current score from the DOM and increments it
   
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
@@ -293,7 +290,7 @@ function checkAnswer(selectedOption, currentQuestion) {
   
   function incrementWrongAnswer() {
   
-    // Gets the current tally of incorrect answers from the DOM and increments it
+// Gets the current tally of incorrect answers from the DOM and increments it
   
     let oldScore = parseInt(document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++oldScore;  
@@ -305,6 +302,7 @@ function checkAnswer(selectedOption, currentQuestion) {
     currentQuestionNum ++ ;
     if (currentQuestionNum < questions.length) {
       resultElement.textContent = "";
+      resultElement.style.border="none";
       showQuestion(); }
       else {
         totalScore();
@@ -335,7 +333,8 @@ function checkAnswer(selectedOption, currentQuestion) {
    function totalScore () {
 
     let total = parseInt(document.getElementById ("score").innerText);
-    document.getElementById("feedback").textContent = "Final Score : " + total  +" Correct Answers!";
+    let wrongAnswer = parseInt(document.getElementById ("incorrect").innerText);
+    document.getElementById("feedback").textContent = "Final Score : " + total  +" Correct and " + wrongAnswer + " Wrong Answers";
    }
 
    function resetScore() {
