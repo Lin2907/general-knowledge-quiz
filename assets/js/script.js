@@ -312,7 +312,6 @@ function checkAnswer(selectedOption, currentQuestion)
         document.getElementById ("result").style.display ="none";
         document.getElementById ("feedback").style.display= "block";
         nextButton.textContent = "Restart";  // Change the text content of Next button
-        resetScore();
   };
 
   }
@@ -337,6 +336,7 @@ function checkAnswer(selectedOption, currentQuestion)
     let wrongAnswer = parseInt(document.getElementById ("incorrect").innerText);
     let feedbackImage = document.getElementById("quiz-img");
     document.getElementById("feedback").textContent = "Final Score : " + total  +" Correct and " + wrongAnswer + " Wrong Answers";
+    feedbackElement.style.fontWeight = "bold";
     if (total >= 6) {
       feedbackImage.src = "./assets/images/prize.jpg";
     }
@@ -359,6 +359,7 @@ function checkAnswer(selectedOption, currentQuestion)
 
     currentQuestionNum = 0
     resultElement.textContent = "";
+    resetScore ();  
     startQuiz ();
     showQuestion() ;
     document.getElementById("questions").style.display = "block"; // Getting the question back on the screen
@@ -366,8 +367,7 @@ function checkAnswer(selectedOption, currentQuestion)
     document.getElementById ("result") .style.display = " block";
     document.getElementById("feedback").style.display = "none"; // Hide the feedback
     nextButton.textContent = "Next"; // 'Restart' back to 'Next' button
-    resetTimer();   
-    
+    resetTimer();     
 }
     
 
