@@ -27,15 +27,15 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
     #girl-img
    { position:relative;
         width:60%;
-        height:60%;
+        height: 60%;
         left:20%;
         }
 
         #quiz-img { display:none;
            position:relative;
-            width:60%;
-            height:60%;
-            left :20%;
+            max-width:50%;
+            height:auto;
+            left :25%;
            
             }
         
