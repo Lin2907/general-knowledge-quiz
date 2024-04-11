@@ -79,7 +79,7 @@ let questions = [
         question: "What is the longest river in the world?",
         options: ["Amazon River", "Nile", "Yellow River", "Congo River"],
         answer: "Nile",
-        imageUrl:"./assets/images/river.jpeg"
+        imageUrl:"./assets/images/river.jpg"
     },
 
     {
