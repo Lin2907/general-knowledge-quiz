@@ -149,7 +149,7 @@ let questions = [
   question: "next random question1",
   options: ["Amazon River", "Nile", "Yellow River", "Congo River"],
   answer: "Nile",
-  imageUrl:"./assets/images/river.jpeg"
+  imageUrl:"./assets/images/river.jpg"
 },
 
 {

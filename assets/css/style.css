@@ -175,12 +175,12 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
 #time{ 
   display:none;
   margin : auto;
-  margin-right: 2%;
+  margin-right: 0.5%;
   width : 80px;
   height:80px;
   border: solid rgb(131, 13, 115) 5px;
   background-color: transparent;
-  padding:20px;
+  padding:10px;
   border-radius:50%;
   color: rgb(131, 13, 115);   
 }
@@ -193,12 +193,17 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
     #board {
       flex-direction: column;
     }
-    #girl-img,
-    #quiz-img  {
+    #girl-img
+     {
         flex-direction: column;
         width:100%;
         height:auto;
         left:0%;
+    }
+    #quiz-img { 
+      flex-direction: column;
+      min-width: 100% ;
+      left: 0%;;
     }
 
 
