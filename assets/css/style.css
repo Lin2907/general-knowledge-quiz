@@ -241,7 +241,7 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
    #next { float:none;
   }
 
-  #time { display: flex;
+  #time { display: none;
           flex-direction: column;
           margin : auto;
           margin-top: 20px;
