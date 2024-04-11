@@ -247,6 +247,7 @@ let timeButton = document.getElementById ("time");
 let countdown = setInterval(function() {
 sec -- ;
 // Update the button number and add styles
+timeButton.style.display = "block";
 timeButton.textContent = sec;
 timeButton.style.fontSize = "80%";
 timeButton.style.fontWeight="bold";
@@ -332,11 +333,13 @@ function checkAnswer(selectedOption, currentQuestion) {
     // Function for showing the sum of correct answers
 
    function totalScore () {
+
     let total = parseInt(document.getElementById ("score").innerText);
     document.getElementById("feedback").textContent = "Final Score : " + total  +" Correct Answers!";
    }
 
    function resetScore() {
+
     document.getElementById("score").innerText = "0";
     document.getElementById("incorrect").innerText = "0";
    }
@@ -355,9 +358,7 @@ function checkAnswer(selectedOption, currentQuestion) {
     document.getElementById ("result") .style.display = " block";
     document.getElementById("feedback").style.display = "none"; // Hide the feedback
     nextButton.textContent = "Next"; // 'Restart' back to 'Next' button
-    resetTimer();
-   
-    
+    resetTimer();   
     
 }
     

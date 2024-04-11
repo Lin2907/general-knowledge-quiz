@@ -172,9 +172,10 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
   padding: 10px;
 }
 
-#time{ margin:20px auto;
-  display:block;
-  float:left;
+#time{ 
+  display:none;
+  margin : auto;
+  margin-right: 2%;
   width : 80px;
   height:80px;
   border: solid rgb(131, 13, 115) 5px;
@@ -188,13 +189,18 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
 /* Smaller screens adjustment*/
 
 @media only screen and (max-width: 768px) {
+
+    #board {
+      flex-direction: column;
+    }
     #girl-img,
-    #quiz-img {
+    #quiz-img  {
         flex-direction: column;
         width:100%;
         height:auto;
         left:0%;
     }
+
 
     h1 { font-size:150%;
     }
@@ -235,7 +241,11 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
    #next { float:none;
   }
 
-  #time { float:none;
-          width:80px;
-          height:80px;}
-}
+  #time { display: flex;
+          flex-direction: column;
+          margin : auto;
+          margin-top: 20px;
+          width:60px;
+          height:60px;
+          }
+        }
