@@ -267,7 +267,7 @@ function checkAnswer(selectedOption, currentQuestion)
   if (selectedOption === currentQuestion.answer) {
 
       resultElement.textContent = "Amazing ! This is Correct!";
-      resultElement.style.color = "green";
+      resultElement.style.color = "#00c04b";
       incrementScore();
       
     } else {
