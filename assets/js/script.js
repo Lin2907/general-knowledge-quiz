@@ -242,8 +242,9 @@ sec -- ;
 // Update the button number and add styles
 timeButton.style.display = "block";
 timeButton.textContent = sec;
-timeButton.style.fontSize = "80%";
+timeButton.style.fontSize = "100%";
 timeButton.style.fontWeight="bold";
+timeButton.style.textAlign = "center";
 if (sec <= 0  || currentQuestionIndex >= questions.length) {       // Add the condition for timer to reset
   clearInterval(countdown);
    disableButtons();
@@ -266,13 +267,13 @@ function checkAnswer(selectedOption, currentQuestion)
   if (selectedOption === currentQuestion.answer) {
 
       resultElement.textContent = "Amazing ! This is Correct!";
-      resultElement.style.borderBottom = "solid green 5px";
+      resultElement.style.color = "green";
       incrementScore();
       
     } else {
 
-      resultElement.textContent = "Awwww, Wrong Answer!"
-      resultElement.style.borderBottom = "solid pink 5px";
+      resultElement.textContent = "Awwww, Wrong Answer!";
+      resultElement.style.color = "red";
       incrementWrongAnswer();
     }
   }

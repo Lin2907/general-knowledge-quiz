@@ -184,33 +184,43 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
   border-radius:50%;
   color: rgb(131, 13, 115);   
 }
+#score {
+  color : green; 
+ }
+
+#incorrect {
+  color: red;
+}
 
 
 /* Smaller screens adjustment*/
 
 @media only screen and (max-width: 768px) {
 
-    #board {
+#board {
       flex-direction: column;
     }
-    #girl-img
-     {
+   
+#girl-img  {
         flex-direction: column;
         width:100%;
         height:auto;
         left:0%;
     }
-    #quiz-img { 
+
+#quiz-img { 
       flex-direction: column;
       min-width: 100% ;
       left: 0%;;
     }
 
 
-    h1 { font-size:150%;
+h1 { 
+     font-size:150%;
     }
 
-    #holder { width : 90%;
+#holder { 
+      width : 90%;
       border: solid rgb(131, 13, 115) 5px;
     }
 
@@ -231,26 +241,32 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
     font-weight: bold;
     padding:20px;
  }
+
  #options 
  .option-btn,
- #next { display: flex;
-        flex-direction: column;
-         width:100%;}
+ #next { 
+    display: flex;
+    flex-direction: column;
+    width:100%;
+        }
 
   .scores {
     margin: 0.5em auto;
     display: block;
     padding: 5px;
-    font-size:100%;}
+    font-size:100%;
+  }
 
    #next { float:none;
   }
 
-  #time { display: none;
-          flex-direction: column;
-          margin : auto;
-          margin-top: 20px;
-          width:60px;
-          height:60px;
-          }
-        }
+  #time { 
+    display: none;
+    flex-direction: column;
+    margin : auto;
+    margin-top: 20px;
+    width:60px;
+    height:60px;
+  }
+    
+  }
