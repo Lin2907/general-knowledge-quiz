@@ -335,9 +335,17 @@ function checkAnswer(selectedOption, currentQuestion)
 
     let total = parseInt(document.getElementById ("score").innerText);
     let wrongAnswer = parseInt(document.getElementById ("incorrect").innerText);
+    let feedbackImage = document.getElementById("quiz-img");
     document.getElementById("feedback").textContent = "Final Score : " + total  +" Correct and " + wrongAnswer + " Wrong Answers";
+    if (total >= 6) {
+      feedbackImage.src = "./assets/images/prize.jpg";
+    }
+   else {
+    feedbackImage.src ="./assets/images/thanks.jpg";
    }
+    }
 
+    
    function resetScore() {
 
     document.getElementById("score").innerText = "0";
