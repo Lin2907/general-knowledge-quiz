@@ -56,70 +56,113 @@ function startQuiz() {
 
 
 // Adding questions - Question source : https://www.quiztriviagames.com/multiple-choice-trivia-questions/
+
 let questions = [
-    {   id : 0 ,
+    {
         question: "What is the longest river in the world?",
         options: ["Amazon River", "Nile", "Yellow River", "Congo River"],
         answer: "Nile",
         imageUrl:"./assets/images/river.jpeg"
     },
+
     {
-        id : 1,
         question: "In which museum can you find Leonardo Da Vinci's Mona Lisa?",
         options: ["Le Louvre", "Uffizi Museum", "British Museum", "Museum of Art"],
         answer: "Le Louvre",
         imageUrl: "./assets/images/monalisa.jpg"
     },
-    {   id : 2,
+
+    {  
         question: "Which one of the following islands is not in Scotland?",
         options: ["Isle of Skye", "Islay", "Isle of Mull", "Caladesi Island"],
         answer: "Caladesi Island",
         imageUrl: "./assets/images/island.jpg"
     },
-    {  id : 3,
+
+    {  
       question: "Who was the first woman to win a Nobel Prize?",
       options: ["Mother Teresa", "Marie Curie", "Jane Adams", "Alva Myrdal"],
       answer: "Marie Curie",
       imageUrl: "./assets/images/puzzle.jpg"
     },
-    {  id : 4,
+
+    {  
       question: "Which Friends character's famous pickup line is How you doin'?",
       options: ["Joey", "Ross", "Chandler", "Mike" ], 
       answer: "Joey",
       imageUrl: "./assets/images/friends.jpg"
     },
-    { id : 5,
+
+    { 
       question : "How many strings has a standard bass guitar?",
       options : [ "3" , "4", "5" , "6"],
       answer : "4",
       imageUrl: "./assets/images/guitar.png"
     },
 
-    { id : 6 ,
-    question: "What's Garfield favourite food?" ,
-    options: ["Pizza" , "Lasagna" , "Burger", "Sandwich"],
-    answer: "Lasagna",
-    imageUrl : "./assets/images/garfield.png"
-  },
-  { id :7,
-   question:"Which country is the top producer of coffee?",
-   options: ["Colombia" ,"Ivory Coast" , "Brazil" , "Argentina" ],
-   answer: "Brazil",
-   imageUrl : "./assets/images/coffee.png"
-},
-  { id : 8 ,
-  question : "Which of the following is the largest city?",
-  options : ["Tokyo", "New York", "London" , "Rome"] ,
-  answer: "Tokyo",
-  imageUrl : "./assets/images/city.jpg"
+    { 
+     question: "What's Garfield favourite food?" ,
+     options: ["Pizza" , "Lasagna" , "Burger", "Sandwich"],
+     answer: "Lasagna",
+     imageUrl : "./assets/images/garfield.png"
   },
 
-  { id:9,
+  { 
+    question:"Which country is the top producer of coffee?",
+    options: ["Colombia" ,"Ivory Coast" , "Brazil" , "Argentina" ],
+    answer: "Brazil",
+    imageUrl : "./assets/images/coffee.png"
+},
+
+  { 
+   question : "Which of the following is the largest city?",
+   options : ["Tokyo", "New York", "London" , "Rome"] ,
+   answer: "Tokyo",
+   imageUrl : "./assets/images/city.jpg"
+  },
+
+  { 
   question :"Who is the Greek goddess of beauty?",
   options: ["Aphrodite" , "Demeter" , "Hestia" , "Athena"],
   answer : "Aphrodite",
   imageUrl : "./assets/images/greece.jpg"
-}
+},
+
+{
+  question: "next random question1",
+  options: ["Amazon River", "Nile", "Yellow River", "Congo River"],
+  answer: "Nile",
+  imageUrl:"./assets/images/river.jpeg"
+},
+
+{
+  question: "next random question 2",
+  options: ["Le Louvre", "Uffizi Museum", "British Museum", "Museum of Art"],
+  answer: "Le Louvre",
+  imageUrl: "./assets/images/monalisa.jpg"
+},
+
+{  
+  question: "next random question 3",
+  options: ["Isle of Skye", "Islay", "Isle of Mull", "Caladesi Island"],
+  answer: "Caladesi Island",
+  imageUrl: "./assets/images/island.jpg"
+},
+
+{  
+question: "next random question 4",
+options: ["Mother Teresa", "Marie Curie", "Jane Adams", "Alva Myrdal"],
+answer: "Marie Curie",
+imageUrl: "./assets/images/puzzle.jpg"
+},
+
+{  
+question: "next random question 5",
+options: ["Joey", "Ross", "Chandler", "Mike" ], 
+answer: "Joey",
+imageUrl: "./assets/images/friends.jpg"
+},
+
 
 ];
 
