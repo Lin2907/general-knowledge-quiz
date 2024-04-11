@@ -312,6 +312,7 @@ function checkAnswer(selectedOption, currentQuestion)
         document.getElementById ("result").style.display ="none";
         document.getElementById ("feedback").style.display= "block";
         nextButton.textContent = "Restart";  // Change the text content of Next button
+        resetScore();
   };
 
   }
@@ -358,8 +359,7 @@ function checkAnswer(selectedOption, currentQuestion)
    function restartQuiz() {
 
     currentQuestionNum = 0
-    resultElement.textContent = "";
-    resetScore ();  
+    resultElement.textContent = "";  
     startQuiz ();
     showQuestion() ;
     document.getElementById("questions").style.display = "block"; // Getting the question back on the screen
