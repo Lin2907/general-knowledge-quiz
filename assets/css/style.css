@@ -35,9 +35,8 @@ h1 { font-family:Verdana, Geneva, Tahoma, sans-serif ;
            position:relative;
             max-width:60%;
             height:auto;
-            left :20%;
-           
-            }
+            left :25%;
+        }
         
     
     /* The Modal (background) */
@@ -262,6 +261,7 @@ h1 {
 
   #time { 
     display: none;
+    border:transparent;
     flex-direction: column;
     margin : auto;
     margin-top: 20px;
