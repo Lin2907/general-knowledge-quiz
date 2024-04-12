@@ -249,7 +249,10 @@ if (sec <= 0  || currentQuestionNum >= questions.length) {       // Add the cond
   clearInterval(countdown);
    disableButtons();
    totalScore();
-   startQuiz();
+  nextButton.textContent = "Restart";  // Change the text content of Next button
+   resetScore();
+   restartQuiz();
+
 }
 
 }, 1000 );  // run the interval every 1 second (1000ms)
