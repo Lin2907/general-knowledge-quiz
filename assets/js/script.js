@@ -147,35 +147,35 @@ let questions = [
   question: "What is the percentage of the Earth covered by water?",
   options: ["51 %", "61 %", "71 %", "81 %"],
   answer: "71 % ",
-  imageUrl:"./assets/images/river.jpg"
+  imageUrl:"./assets/images/earth.jpg"
 },
 
 {
   question: "What is the oldest university in the UK?",
   options: ["Cambridge", "Manchester", "Bath", "Oxford"],
   answer: "Oxford",
-  imageUrl: "./assets/images/monalisa.jpg"
+  imageUrl: "./assets/images/university.jpg"
 },
 
 {  
-  question: "Dom Pérignon is known as the Father of what?",
-  options: ["Computing science", "Telephone", "Isle of Mull", "Caladesi Island"],
-  answer: "Caladesi Island",
-  imageUrl: "./assets/images/island.jpg"
+  question: "What is guacamole made of?",
+  options: ["Banana", "Yoghurt", "Avocado", "Chick Pea"],
+  answer: "Avocado",
+  imageUrl: "./assets/images/dinner.jpg"
 },
 
 {  
 question: " Who released the song 'Girls Just Want To Have Fun' in the 80s? ",
 options: ["Blondie", "Cyndi Lauper", "A-ha", "Bonnie Tyler"],
 answer: "Marie Curie",
-imageUrl: "./assets/images/puzzle.jpg"
+imageUrl: "./assets/images/gramophone.jpg"
 },
 
 {  
-question: "What is the national animal of England?",
-options: ["Puffin", "Lion", "Rabbit", "Fox"], 
-answer: "Lion",
-imageUrl: "./assets/images/friends.jpg"
+question: "Which country won the first Football World Cup in 1930?",
+options: ["Brazil", "Portugal", "Italy", "Uruguay"], 
+answer: "Uruguay",
+imageUrl: "./assets/images/football.jpg"
 },
 ];
 
@@ -235,7 +235,7 @@ document.addEventListener("DOMContentLoaded", function() {
 //  Timer set up 
 function setTimer () {
 
-  let sec = 10; 
+  let sec = 300; 
   let timeButton = document.getElementById ("time");
   let countdown = setInterval(function() {
   sec -- ;
@@ -273,7 +273,7 @@ function setTimer () {
 function resetTimer() {
 
   clearInterval(countdown);
-  sec=10;
+  sec=300;
 }
 
  // Checking the answer showing the result
