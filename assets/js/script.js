@@ -33,7 +33,7 @@ function shuffleArray(array) {
       const j = Math.floor(Math.random() * (i + 1));
       [array[i], array[j]] = [array[j], array[i]];
   }
-  return array.slice(0, 10);       // Slice the array to contain only the first 10 random indexes
+  return array.slice(0, 10);       // Slice the array to get only the first 10 random indexes
 }
 
 // When the document is loaded, shuffle the questions
@@ -188,7 +188,7 @@ let imgElement = document.getElementById("quiz-img");
 // First question
 let currentQuestionNum= 0;
 
-//Retrieve the current question object from an above array with questions using the currentQuestion index
+//Retrieve the current question object from an above array with questions using the currentQuestion counter
 
 function showQuestion() {  
   if (currentQuestionNum < questions.length) {
@@ -217,7 +217,7 @@ function showQuestion() {
  }
 }
   
-// Disabling the option buttons - Source W3Schools and https://flexiple.com/javascript/disable-button-javascript 
+// Disabling the option buttons 
  function disableButtons() {
 
   let buttons = document.querySelectorAll(".option-btn");
@@ -245,9 +245,11 @@ timeButton.textContent = sec;
 timeButton.style.fontSize = "100%";
 timeButton.style.fontWeight="bold";
 timeButton.style.textAlign = "center";
-if (sec <= 0  || currentQuestionIndex >= questions.length) {       // Add the condition for timer to reset
+if (sec <= 0  || currentQuestionNum >= questions.length) {       // Add the condition for timer to reset
   clearInterval(countdown);
    disableButtons();
+   totalScore();
+   startQuiz();
 }
 
 }, 1000 );  // run the interval every 1 second (1000ms)
