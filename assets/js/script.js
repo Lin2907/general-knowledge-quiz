@@ -146,7 +146,7 @@ let questions = [
 {
   question: "What is the percentage of the Earth covered by water?",
   options: ["51 %", "61 %", "71 %", "81 %"],
-  answer: "71 % ",
+  answer: "71 %",
   imageUrl:"./assets/images/earth.jpg"
 },
 
@@ -167,7 +167,7 @@ let questions = [
 {  
 question: " Who released the song 'Girls Just Want To Have Fun' in the 80s? ",
 options: ["Blondie", "Cyndi Lauper", "A-ha", "Bonnie Tyler"],
-answer: "Marie Curie",
+answer: "Cyndi Lauper",
 imageUrl: "./assets/images/gramophone.jpg"
 },
 
@@ -245,7 +245,7 @@ function setTimer () {
   timeButton.style.fontSize = "100%";
   timeButton.style.fontWeight="bold";
   timeButton.style.textAlign = "center";
-  if (sec <= 0  || currentQuestionIndex >= questions.length) {       // Add the condition for timer to reset
+  if (sec <= 0  || currentQuestionNum >= questions.length) {       // Add the condition for timer to reset
     clearInterval(countdown);
      disableButtons();
      if (sec <= 0) {
@@ -273,7 +273,7 @@ function setTimer () {
 function resetTimer() {
 
   clearInterval(countdown);
-  sec=300;
+  setTimer () ;
 }
 
  // Checking the answer showing the result
@@ -382,7 +382,7 @@ function checkAnswer(selectedOption, currentQuestion)
     document.getElementById ("result") .style.display = " block";
     document.getElementById("feedback").style.display = "none"; // Hide the feedback
     nextButton.textContent = "Next"; // 'Restart' back to 'Next' button
-    resetTimer();     
+    resetTimer();
 }
 
 
