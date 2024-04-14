@@ -2,7 +2,9 @@
 
 Welcome !
 
-This quiz is designed to test your knowledge across various topics with 10 randomly chosen questions from a pool of 15. Each question includes four answer options, and the user needs to select the correct one. Feedback is provided for each question, and once the user has selected an answer, the other option buttons will be disabled. Additionally, the timer is set for 5 minutes to complete the quiz.
+This document will provide an overview of the quiz structure, content and technologies used.
+
+The quiz is designed to test your knowledge across various topics with 10 randomly chosen questions from a pool of 15. Each question includes four answer options, and the user needs to select the correct one. Feedback is provided for each question, and once the user has selected an answer, the other option buttons will be disabled. Additionally, the timer is set for 5 minutes to complete the quiz.
 
 The quiz site is responsive across all screen sizes, ensuring a consistent user experience on desktops, tablets, and mobile devices.
 
