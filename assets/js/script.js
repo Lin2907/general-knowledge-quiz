@@ -252,7 +252,7 @@ function setTimer () {
       document.getElementById("questions").style.display = "none"; 
       document.getElementById("options").style.display = "none";
       document.getElementById("result").style.display = "none";
-      nextButton.textContent = "Restart";
+      nextButton.textContent = "Play again";
       nextButton.onclick = function () {
       document.getElementById("feedback").textContent = "";
       document.getElementById("questions").style.display = "block"; 
@@ -324,7 +324,7 @@ function checkAnswer(selectedOption, currentQuestion)
         document.getElementById ("options") .style.display= "none";
         document.getElementById ("result").style.display ="none";
         document.getElementById ("feedback").style.display= "block";
-        nextButton.textContent = "Restart";  // Change the text content of Next button
+        nextButton.textContent = "Play again";  // Change the text content of Next button
         resetScore();
   };
 
