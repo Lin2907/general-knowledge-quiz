@@ -4,7 +4,7 @@ Welcome !
 
 This document will provide an overview of the quiz structure, content and technologies used.
 
-The quiz is designed to test your knowledge across various topics with 10 randomly chosen questions from a pool of 15. Each question includes four answer options, and the user needs to select the correct one. Feedback is provided for each question, and once the user has selected an answer, the other option buttons will be disabled. Additionally, the timer is set for 5 minutes to complete the quiz.
+The quiz is designed to test the user's knowledge across various topics with 10 randomly chosen questions from a pool of 15. Each question includes four answer options, and the user needs to select the correct one. Feedback is provided for each question, and once the user has selected an answer, the other option buttons will be disabled. Additionally, the timer is set for 5 minutes to complete the quiz.
 
 The quiz site is responsive across all screen sizes, ensuring a consistent user experience on desktops, tablets, and mobile devices.
 
@@ -19,6 +19,9 @@ The live link can be found here: [General Knowledge Quiz](https://lin2907.github
 
   <img src = "assets/media/landing-page.png" alt = "Landing page screenshot">
   <br> <br>
+
+  + The Landing page also includes a modal with instructions on how to play the quiz. This modal provides guidance on navigating the quiz. User can access the instructions by clicking the "Instructions" button on the landing page.
+
   <img src = "assets/media/modal.png" alt = " Quiz instructions">
 
 ### Randomized Questions
