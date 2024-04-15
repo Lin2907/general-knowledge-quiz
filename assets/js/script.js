@@ -10,20 +10,18 @@ let span = document.getElementsByClassName("close")[0];
 // Get the start button , previously hidden
 let startButton = document.getElementById ("start");
 
-let holder = document.getElementById("holder");
-
 
 // When the user clicks on the button, open the modal
-rules.onclick = function() {
+openButton.onclick = function() {
   modal.style.display = "block";
-}
+};
 
 // When the user clicks on <span> (x), close the modal and open Start button
   span.onclick = function() {
 
   modal.style.display = "none";
   openButton .style.display="none";
-  }
+  };
 
   // Shuffle function to randomize questions array - Durstenfeld / Fisher-Yates shuffle 
 
@@ -60,8 +58,8 @@ function toggleQuizModal()  {
 
 function startQuiz() {
 
-  if (rules.style.display = "block") { 
-   rules.style.display = "none";
+  if (openButton.style.display = "block") { 
+   openButton.style.display = "none";
    modal.style.display = "none";
   }
   showQuestion() ;
@@ -253,16 +251,16 @@ function setTimer () {
       document.getElementById("feedback").textContent ="Sorry, Time's up...try again !";
       document.getElementById("questions").style.display = "none"; 
       document.getElementById("options").style.display = "none";
-      document.getElementById("result").style.display = "none"
+      document.getElementById("result").style.display = "none";
       nextButton.textContent = "Restart";
       nextButton.onclick = function () {
       document.getElementById("feedback").textContent = "";
       document.getElementById("questions").style.display = "block"; 
       document.getElementById("options").style.display = "block";
-      document.getElementById("result").style.display = "block"
+      document.getElementById("result").style.display = "block";
       startQuiz();
 
-      }
+      };
     }
   }
 }, 1000); // run the interval every 1 second (1000ms)
