@@ -139,6 +139,12 @@ Checked for any error messages or unexpected behavior.
 
   <img src = "assets/media/jshint.png" alt="JavaScript Validator">
 
+## Browser Testing
+
+ + Layout : Testing Layout and appearance of site for consistency throughout Browsers.
+ + Ensuring all buttons and function as expected throughout browsers.
+
+ Browsers tested: Microsoft Edge, Google Chrome, Mozilla Firefox, Safari .
 
 
 ## Accesibility
@@ -166,10 +172,10 @@ I've confirmed that the colors and fonts are chosen are easy to read and accessi
 
   + Score area was implemented similar as in "Love Maths" school project.
 + Media
-
   + Questions ,options and answers were taken from [Quiz Trivia Games](www.quiztriviagames.com) .
 
-  + Images were taken from [Pexels](https://www.pexels.com/) .
+  + Images were taken from [Pexels](https://www.pexels.com/) . <br>
+  <br>
 
 Enjoy the Challenge !
 
