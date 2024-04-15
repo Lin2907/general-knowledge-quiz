@@ -15,7 +15,7 @@ The live link can be found here: [General Knowledge Quiz](https://lin2907.github
 ## Features
 
 ### Landing Page
-  + The landing page displays the quiz heading, hero image, also the buttons for instructions and starting the quiz. Clicking "Start" closes the instructions modal if previously opened.
+  + The landing page displays the quiz header, hero image, also the buttons for instructions and starting the quiz. Click on the "Start" button closes the instructions modal if previously opened.
 
   <img src = "assets/media/landing-page.png" alt = "Landing page screenshot">
   <br> <br>
@@ -48,12 +48,12 @@ The live link can be found here: [General Knowledge Quiz](https://lin2907.github
 
 ### Images
 
-Each question feature unique images is adding to the visual experience.
+Each question features unique image, which is adding to the visual user experience.
 
 <img src = "assets/media/question-related.png" alt ="Question related image">
 
 ### Score-Based Feedback
-  + The feedback image and comment vary depending on your total score achieved.
+  + The feedback image and comment vary depending on the total score achieved.
 
 ### Restart Option
   + At the end of the quiz or if the timer runs out, a Restart button is available. This provides the user with the opportunity to play the quiz again and improve the score.
@@ -78,4 +78,66 @@ Incorrect Answer: Learn from your mistake with detailed feedback on why the sele
 Your total score is displayed at the end of the quiz.
 ### Timer
  + A timer is set for 5 minutes to complete the quiz. Finish the quiz within the time limit for the best experience.
+
+## Testing
+
+1. ### Functionality
+
+  + Verified that all interactive elements (buttons , timer) are functional.
+  + Tested any user inputs and ensured they produce the expected outcomes.
+Checked for any error messages or unexpected behavior.
+
+2. ### Layout and Design testing
+
+ + Reviewed the layout and design of the website. Ensured that the content is well-structured and aligned.
+
+ + Tested the responsiveness of the website by using developer tools to simulate different device sizes.
+
+ + Confirmed that the website looks visually appealing on various screen sizes.
+
+3. ### Reporting issues
+ + No known issues
+
+## Validator Testing
+ + HTML
+    * No errors were returned when passing through the official [W3C validator](https://validator.w3.org/)
+
+    <img src = "assets/media/html-checker.png" alt ="Html Validator result">
+
++ CSS
+
+  * No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
+
+   <img src= "assets/media/w3c-css-validator.png" alt="CSS validator result">
+
++ JavaScript
+  * No errors were found when passing through the [JSHint](https://jshint.com/).
+
+  <img src = "assets/media/jshint.png" alt="JavaScript Validator">
+
+
+
+## Accesibility
+
+I've confirmed that the colors and fonts are chosen are easy to read and accessible by running it through Lighthouse in devtools.
+
+<img src ="assets/media/performance.png" alt ="Performance , Accesssibility Best Practeces and SEO">
+
+## Bugs
+ + Issue: Timer not working correctly on quiz restart, on each second blink it shows 2 values. 
+ + Cause: Set timer and reset timer function were used withing the same scope of StartQuiz function.
+ + Fix: Removed the setTimer function.
+
+ + Issue: The Quiz question images were not visible on the deployed version.
+ + Cause : On the deployed version, the files were not recognized by the path given, I therefore added "../assets/" instead of  "./assets " .
+ + Fix : Changed the path to the images .
+
+ 
+
+
+
+
+
+
+
 
