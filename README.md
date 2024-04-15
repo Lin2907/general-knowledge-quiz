@@ -60,6 +60,9 @@ Each question features unique image, which is adding to the visual user experien
 
 <img src = "assets/media/result.png" alt ="End score and restart button">
 
+### Features left to Implement
+It includes user feedback area and links to support resources regarding the correct answers, ensuring that users can get more information.
+
 ## How to Play
 
 1. Launch the quiz.
@@ -98,7 +101,28 @@ Checked for any error messages or unexpected behavior.
 3. ### Reporting issues
  + No known issues
 
+## Design
+
+### Colors
+
+ + Border, Header and Buttons color : Purple note.
+ + Quiz area background color : Light purple note
+
+ <img src="assets/media/color.png" alt = " Border color">
+<br><br>
+<img src = "assets/media/background-color.png" alt = "Background color">
+
+
+## Typography
+
+ + Sans Serif: The font gives off a classic elegance.
+
+## Technology used
+ + HTML , CSS , JavaScript
+ + GitHub, Gitpod
+
 ## Validator Testing
+
  + HTML
     * No errors were returned when passing through the official [W3C validator](https://validator.w3.org/)
 
@@ -132,8 +156,22 @@ I've confirmed that the colors and fonts are chosen are easy to read and accessi
  + Cause : On the deployed version, the files were not recognized by the path given, I therefore added "../assets/" instead of  "./assets " .
  + Fix : Changed the path to the images .
 
- 
+ ## Credits
 
++ Content
+
+  * For randomized questions,  Durstenfeld shuffle, an optimized version of Fisher-Yates was used.
+
+  * Inspired from W3C schools and Code Institute lessons for creating timer function.
+
+  + Score area was implemented similar as in "Love Maths" school project.
++ Media
+
+  + Questions ,options and answers were taken from [Quiz Trivia Games](www.quiztriviagames.com) .
+
+  + Images were taken from [Pexels](https://www.pexels.com/) .
+
+Enjoy the Challenge !
 
 
 
