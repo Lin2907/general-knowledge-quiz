@@ -233,7 +233,7 @@ document.addEventListener("DOMContentLoaded", function() {
 //  Timer set up 
 function setTimer () {
 
-  let sec = 300; 
+  let sec = 10; 
   let timeButton = document.getElementById ("time");
   let countdown = setInterval(function() {
   sec -- ;
@@ -258,6 +258,7 @@ function setTimer () {
       document.getElementById("questions").style.display = "block"; 
       document.getElementById("options").style.display = "block";
       document.getElementById("result").style.display = "block";
+      nextButton.textContent = "Next" ;
       startQuiz();
 
       };
@@ -269,7 +270,6 @@ function setTimer () {
 
 // Reseting the timer
 function resetTimer() {
-
   clearInterval(countdown);
   setTimer () ;
 }
