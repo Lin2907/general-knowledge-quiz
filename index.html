@@ -1,73 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="General knowledge Quiz">
-    <meta name="keywords" content="general knowledge, quiz, trivia">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <!--Title-->
-    <title>Quiz</title>
-    <!--Favicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-</head>
-<body>
-    <header>
-    <h1>General knowledge Quiz</h1>
-    </header>
-    <main>
-        <div id ="holder">
-            <div id="board">
-               <img src="assets/images/girl.webp" id="girl-img" alt="Girl looking at the board with notes">
-               <img src = "assets/images/guitar.png" id="quiz-img" alt = "Question related image">
-               <button id="time"></button>
-            </div>
-               
-               <div id="rules">
-               <!-- Trigger/Open The Modal -->
-               <button>Instructions</button>
-               </div>
-               
-               <!-- The Modal W3 Schools-->
-               <div id="myRules" class="open">
-               
-                 <!-- Modal content -->
-                 <div class="rules-content">
-                   <span class="close">&times;</span>
-                   <p>Test your knowledge on a variety of topics from around the world.
-                     The quiz consists of 10 questions and you'll have 5 minutes to finish the quiz. Each question will have multiple-choice options, 
-                    and you'll need to select the correct answer from the choices provided.
-                    Let's see how well you know the world around you!</p>   
-                   <ul>
-                       <li>Read each question carefully before selecting your answer.</li>
-                       <li>Choose the option you believe is correct.</li>
-                       <li>Click on the chosen option to submit your answer.</li>
-                       <li>You'll receive instant feedback after each question to let you know whether your answer was correct or incorrect.</li>
-                       <li>Keep an eye on the timer!</li>
-                   </ul>
-                   <p><strong>Are you ready to put your general knowledge to the test? Let's begin!</strong></p>
-                 </div>
-               </div>
-               <!--Start button function will be triggered on click-->
-               <button id = "start" onclick = "startQuiz();">Start</button> <br>
-               <div id="quiz">
-               <div id="questions"></div>
-               <div id="options"></div>
-               <div id="result"></div>
-               <button id="next" value="submit">Next</button>
-               <div id="feedback"></div>  
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="General knowledge Quiz">
+        <meta name="keywords" content="general knowledge, quiz, trivia">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <!--Title-->
+        <title>Quiz</title>
+        <!--Favicon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    </head>
+    <body>
+        <header>
+            <h1>General knowledge Quiz</h1>
+        </header>
+        <main>
+            <div id="holder">
+                <div id="board">
+                    <img src="assets/images/girl.webp" id="girl-img" alt="Girl looking at the board with notes">
+                    <img src="assets/images/guitar.png" id="quiz-img" alt="Question related image">
+                    <button id="time"></button>
                 </div>
-               </div>    
-    </main>
-    <div class="score-area">
-        <p class="scores">Correct Answers <span id="score">0</span></p>
-        <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
-    </div>
 
+                <div id="rules">
+                    <!-- Trigger/Open The Modal -->
+                    <button>Instructions</button>
+                </div>
 
-    <script src="assets/js/script.js"></script>  
-</body>
+                <!-- The Modal W3 Schools-->
+                <div id="myRules" class="open">
+                    <!-- Modal content -->
+                    <div class="rules-content">
+                        <span class="close">&times;</span>
+                        <p>
+                            Test your knowledge on a variety of topics from around the world. The quiz consists of 10 questions and you'll have 5 minutes to finish the quiz. Each question will have multiple-choice options, and you'll need
+                            to select the correct answer from the choices provided. Let's see how well you know the world around you!
+                        </p>
+                        <ul>
+                            <li>Read each question carefully before selecting your answer.</li>
+                            <li>Choose the option you believe is correct.</li>
+                            <li>Click on the chosen option to submit your answer.</li>
+                            <li>You'll receive instant feedback after each question to let you know whether your answer was correct or incorrect.</li>
+                            <li>Keep an eye on the timer!</li>
+                        </ul>
+                        <p><strong>Are you ready to put your general knowledge to the test? Let's begin!</strong></p>
+                    </div>
+                </div>
+                <!--Start button function will be triggered on click-->
+                <button id="start" onclick="startQuiz();">Start</button> <br>
+                <div id="quiz">
+                    <div id="questions"></div>
+                    <div id="options"></div>
+                    <div id="result"></div>
+                    <button id="next" value="submit">Next</button>
+                    <div id="feedback"></div>
+                </div>
+            </div>
+        </main>
+        <div class="score-area">
+            <p class="scores">Correct Answers <span id="score">0</span></p>
+            <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
+        </div>
 
+        <script src="assets/js/script.js"></script>
+    </body>
 </html>
