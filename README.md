@@ -34,6 +34,7 @@ The live link can be found here: [General Knowledge Quiz](https://lin2907.github
 
 ### Feedback
  + User Receives an immediate feedback on each question, while the correct answer is not revealed , in order to challenge the user to play the quiz again and to improve the score while disovering the correct answers.
+ + For correct answers, the feedback is shown in green, same as the score displayed in the score area. If an answer is incorrect, the feedback will appear in red, again with the score visible in the same red color. 
 
  <img src = "assets/media/feedback.png" alt = "Feedback">
 
@@ -79,11 +80,11 @@ View your total score at the end of the quiz.
 
 ### Feedback
  + Correct Answer: Receive positive feedback and move on to the next question.
-Incorrect Answer: Learn from your mistake with detailed feedback on why the selected answer was incorrect.
+ + Incorrect Answer: Learn from your mistake, you can play the quiz again and give it another try to find the correct answer
 
 ### Scoring System
- + Each correct answer earns you 1 point.
-Your total score is displayed at the end of the quiz.
+ + Each correct answer earns 1 point for the user.
+ + The total score is displayed at the end of the quiz.
 
 ### Timer
  + A timer is set for 5 minutes to complete the quiz. The quiz needs to be finished within the time limit for the best experience.
@@ -112,7 +113,8 @@ Checked for any error messages or unexpected behavior.
 ### Colors
 
  + Border, Header and Buttons color : Purple note.
- + Quiz area background color : Light purple note
+ + Quiz area background color : Light purple note .
+ + Result feedback and score colors: Red and Green.
 
  <img src="assets/media/color.png" alt = " Border color">
 <br><br>
@@ -172,9 +174,6 @@ I've confirmed that the colors and fonts are chosen are easy to read and accessi
 
  + No known issues
 
-Unfixed Bugs
-There are no known outstanding bugs.
-
 ## Deployment
 
 The site was deployed to GitHub pages. The steps taken to deploy are as follows:
@@ -186,9 +185,7 @@ The site was deployed to GitHub pages. The steps taken to deploy are as follows:
 5. From the source section drop-down menu, select the Main Branch
 Once the main branch has been selected, the page is automatically refreshed and a display indicates the successful deployment and the link to the address. The link to the live website is here: [General Knowledge Quiz](https://lin2907.github.io/general-knowledge-quiz/) .
 
-## Forking and cloning the repository
-
- ### Forking
+ ## Forking the repository
 
 In order to fork the repository to make a copy the steps are:
 
@@ -196,28 +193,17 @@ In order to fork the repository to make a copy the steps are:
   + At the top of the repository above settings locate the 'Fork' button
 There is now a copy of the repository in the Github account.
 
- ### Making a local clone
-
-+ On GitHub navigate to the main page of the repository.
-+ Above the list of files click the dropdown code menu.
-+ Select the https option and copy the link.
-+ Open the GitPod Bash terminal.
-+ Change the current working directory to the desired destination location.
-+ Type the git clone command with the copied URL: git clone (URL).
-+ Press enter to create the local clone.
-
-
  ## Credits
 
 + Content
 
-  * For randomized questions,  Durstenfeld shuffle, an optimized version of Fisher-Yates was used.
+  * For randomized questions, Durstenfeld shuffle, an optimized version of Fisher-Yates was used.
 
   * Inspired by W3C schools and Code Institute lessons for creating timer function.
 
   + Score area was implemented similar as in "Love Maths" school project.
 + Media
-  + Questions ,options and answers were taken from [Quiz Trivia Games](www.quiztriviagames.com) .
+  + Questions, options and answers were taken from [Quiz Trivia Games](www.quiztriviagames.com) .
 
   + Images were taken from [Pexels](https://www.pexels.com/) . <br>
   <br>
