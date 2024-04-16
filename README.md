@@ -213,7 +213,7 @@ There is now a copy of the repository in the Github account.
 
   * For randomized questions,  Durstenfeld shuffle, an optimized version of Fisher-Yates was used.
 
-  * Inspired from W3C schools and Code Institute lessons for creating timer function.
+  * Inspired by W3C schools and Code Institute lessons for creating timer function.
 
   + Score area was implemented similar as in "Love Maths" school project.
 + Media
