@@ -76,14 +76,17 @@ It includes user feedback area and links to support resources regarding the corr
 6. Continue to the next question.
 7. Repeat steps 2-6 for all 10 questions.
 View your total score at the end of the quiz.
+
 ### Feedback
  + Correct Answer: Receive positive feedback and move on to the next question.
 Incorrect Answer: Learn from your mistake with detailed feedback on why the selected answer was incorrect.
+
 ### Scoring System
  + Each correct answer earns you 1 point.
 Your total score is displayed at the end of the quiz.
+
 ### Timer
- + A timer is set for 5 minutes to complete the quiz. Finish the quiz within the time limit for the best experience.
+ + A timer is set for 5 minutes to complete the quiz. The quiz needs to be finished within the time limit for the best experience.
 
 ## Testing
 
@@ -118,7 +121,7 @@ Checked for any error messages or unexpected behavior.
 
 ## Typography
 
- + Sans Serif: The font gives off a classic elegance.
+ + Verdana Sans Serif: The font gives off a classic elegance.
 
 ## Technology used
  + HTML , CSS , JavaScript
@@ -179,6 +182,7 @@ I've confirmed that the colors and fonts are chosen are easy to read and accessi
 
   + Images were taken from [Pexels](https://www.pexels.com/) . <br>
   <br>
+  + Favicon was generated with [Favicon Generator](https://favicon.io/favicon-generator/).
 
 Enjoy the Challenge !
 
