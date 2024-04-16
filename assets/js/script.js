@@ -259,7 +259,6 @@ function setTimer () {
       document.getElementById("options").style.display = "block";
       document.getElementById("result").style.display = "block";
       nextButton.textContent = "Next";
-      resetTimer();
       startQuiz();
       };
     }
@@ -267,12 +266,10 @@ function setTimer () {
 }, 1000); // run the interval every 1 second (1000ms)
 }
 
-setTimer();
-
 // Reseting the timer
 function resetTimer() {
   clearInterval(countdown);
-  
+
 }
 
  // Checking the answer showing the result
