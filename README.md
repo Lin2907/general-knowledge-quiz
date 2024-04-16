@@ -168,6 +168,45 @@ I've confirmed that the colors and fonts are chosen are easy to read and accessi
  + Cause : On the deployed version, the files were not recognized by the path given, I therefore added "../assets/" instead of  "./assets " .
  + Fix : Changed the path to the images .
 
+## Unfixed Bugs
+
+ + No known issues
+
+Unfixed Bugs
+There are no known outstanding bugs.
+
+## Deployment
+
+The site was deployed to GitHub pages. The steps taken to deploy are as follows:
+
+1. Log in to GitHub.
+2. Navigate to https://github.com/Lin2907/general-knowledge-quiz in the list of repositories.
+3. In the GitHub repository, navigate to the Settings tab.
+4. In Settings scroll down to GitHub pages which opens in a new page.
+5. From the source section drop-down menu, select the Main Branch
+Once the main branch has been selected, the page is automatically refreshed and a display indicates the successful deployment and the link to the address. The link to the live website is here: [General Knowledge Quiz](https://lin2907.github.io/general-knowledge-quiz/) .
+
+## Forking and cloning the repository
+
+ ### Forking
+
+In order to fork the repository to make a copy the steps are:
+
+  + Log into GitHub and locate the repository for https://github.com/Lin2907/general-knowledge-quiz.
+  + At the top of the repository above settings locate the 'Fork' button
+There is now a copy of the repository in the Github account.
+
+ ### Making a local clone
+
++ On GitHub navigate to the main page of the repository.
++ Above the list of files click the dropdown code menu.
++ Select the https option and copy the link.
++ Open the GitPod Bash terminal.
++ Change the current working directory to the desired destination location.
++ Type the git clone command with the copied URL: git clone (URL).
++ Press enter to create the local clone.
+
+
  ## Credits
 
 + Content
