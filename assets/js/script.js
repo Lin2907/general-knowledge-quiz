@@ -230,10 +230,10 @@ document.addEventListener("DOMContentLoaded", function() {
   showQuestion();
 });
 
+let countdown;
 //  Timer set up 
 function setTimer () {
-
-  let sec = 10; 
+  let sec = 300; 
   let timeButton = document.getElementById ("time");
   let countdown = setInterval(function() {
   sec -- ;
@@ -246,32 +246,33 @@ function setTimer () {
   if (sec <= 0  || currentQuestionNum >= questions.length) {       // Add the condition for timer to reset
     clearInterval(countdown);
      disableButtons();
-     if (sec <= 0) {
-      totalScore();
+     if (sec === 0) {
       document.getElementById("feedback").textContent ="Sorry, Time's up...try again !";
       document.getElementById("questions").style.display = "none"; 
       document.getElementById("options").style.display = "none";
       document.getElementById("result").style.display = "none";
       nextButton.textContent = "Play again";
+      resetScore();
       nextButton.onclick = function () {
       document.getElementById("feedback").textContent = "";
-      document.getElementById("questions").style.display = "block"; 
+      document.getElementById("questions").style.display = "block";
       document.getElementById("options").style.display = "block";
       document.getElementById("result").style.display = "block";
-      nextButton.textContent = "Next" ;
+      nextButton.textContent = "Next";
+      resetTimer();
       startQuiz();
-
       };
     }
   }
 }, 1000); // run the interval every 1 second (1000ms)
 }
-  
+
+setTimer();
 
 // Reseting the timer
 function resetTimer() {
   clearInterval(countdown);
-  setTimer () ;
+  
 }
 
  // Checking the answer showing the result
