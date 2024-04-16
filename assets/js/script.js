@@ -237,7 +237,7 @@ function setTimer() {
             // Add the condition for timer to reset
             clearInterval(countdown);
             disableButtons();
-            if (sec === 0) {
+            if (sec <= 0) {
                 document.getElementById("feedback").textContent = "Sorry, Time's up...try again !";
                 document.getElementById("questions").style.display = "none";
                 document.getElementById("options").style.display = "none";

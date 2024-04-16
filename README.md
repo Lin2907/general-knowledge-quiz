@@ -172,7 +172,7 @@ I've confirmed that the colors and fonts are chosen are easy to read and accessi
 
 ## Unfixed Bugs
 
- + No known issues
+ + If the timer runs out, by clicking on "Play again" , the countdown doesn't function properly.
 
 ## Deployment
 
