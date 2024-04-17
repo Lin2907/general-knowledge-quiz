@@ -12,6 +12,51 @@ The live link can be found here: [General Knowledge Quiz](https://lin2907.github
 
 <img src ="assets/media/responsive.png" alt = "Responsive design image">
 
+## Design
+
+### Colors
+
+ + Border, Header and Buttons color : Purple note.
+ + Quiz area background color : Light purple note .
+ + Result feedback and score colors: Red and Green.
+
+ <img src="assets/media/color.png" alt = " Border color">
+<br><br>
+<img src = "assets/media/background-color.png" alt = "Background color">
+
+
+## Typography
+
+ + Verdana Sans Serif: The font gives off a classic elegance.
+
+## Technology used
+ + HTML , CSS , JavaScript
+ + GitHub, Gitpod
+
+## How to Play
+
+1. Launch the quiz.
+2. Read each question carefully.
+3. Select the answer you believe is correct.
+4. Receive instant feedback on your choice.
+5. Once you've selected an answer, the other option buttons will be disabled.
+6. Continue to the next question.
+7. Repeat steps 2-6 for all 10 questions.
+View your total score at the end of the quiz.
+
+### Feedback
+ + Correct Answer: Receive positive feedback and move on to the next question.
+ + Incorrect Answer: Learn from your mistake, you can play the quiz again and give it another try to find the correct answer
+
+### Scoring System
+ + Each correct answer earns 1 point for the user.
+ + The total score is displayed at the end of the quiz.
+
+### Timer
+ + A timer is set for 5 minutes to complete the quiz. The quiz needs to be finished within the time limit for the best experience.
+
+
+
 ## Features
 
 ### Landing Page
@@ -67,37 +112,15 @@ Each question features unique image, which is adding to the visual user experien
 ### Features left to Implement
 It includes user feedback area and links to support resources regarding the correct answers, ensuring that users can get more information.
 
-## How to Play
+# Testing
 
-1. Launch the quiz.
-2. Read each question carefully.
-3. Select the answer you believe is correct.
-4. Receive instant feedback on your choice.
-5. Once you've selected an answer, the other option buttons will be disabled.
-6. Continue to the next question.
-7. Repeat steps 2-6 for all 10 questions.
-View your total score at the end of the quiz.
-
-### Feedback
- + Correct Answer: Receive positive feedback and move on to the next question.
- + Incorrect Answer: Learn from your mistake, you can play the quiz again and give it another try to find the correct answer
-
-### Scoring System
- + Each correct answer earns 1 point for the user.
- + The total score is displayed at the end of the quiz.
-
-### Timer
- + A timer is set for 5 minutes to complete the quiz. The quiz needs to be finished within the time limit for the best experience.
-
-## Testing
-
-1. ### Functionality
+1. ## Functionality
 
   + Verified that all interactive elements (buttons , timer) are functional.
   + Tested any user inputs and ensured they produce the expected outcomes.
 Checked for any error messages or unexpected behavior.
 
-2. ### Layout and Design testing
+2. ## Layout and Design testing
 
  + Reviewed the layout and design of the website. Ensured that the content is well-structured and aligned.
 
@@ -105,29 +128,9 @@ Checked for any error messages or unexpected behavior.
 
  + Confirmed that the website looks visually appealing on various screen sizes.
 
-3. ### Reporting issues
+3. ## Reporting issues
  + No known issues
 
-## Design
-
-### Colors
-
- + Border, Header and Buttons color : Purple note.
- + Quiz area background color : Light purple note .
- + Result feedback and score colors: Red and Green.
-
- <img src="assets/media/color.png" alt = " Border color">
-<br><br>
-<img src = "assets/media/background-color.png" alt = "Background color">
-
-
-## Typography
-
- + Verdana Sans Serif: The font gives off a classic elegance.
-
-## Technology used
- + HTML , CSS , JavaScript
- + GitHub, Gitpod
 
 ## Validator Testing
 
@@ -147,13 +150,6 @@ Checked for any error messages or unexpected behavior.
 
   <img src = "assets/media/jshint.png" alt="JavaScript Validator">
 
-## Browser Testing
-
- + Layout : Testing Layout and appearance of site for consistency throughout Browsers.
- + Ensuring all buttons and function as expected throughout browsers.
-
- Browsers tested: Microsoft Edge, Google Chrome, Mozilla Firefox, Safari .
-
 
 ## Accesibility
 
@@ -172,7 +168,7 @@ I've confirmed that the colors and fonts are chosen are easy to read and accessi
 
 ## Unfixed Bugs
 
- + If the timer runs out, by clicking on "Play again" , the countdown doesn't function properly.
+ + No known issues
 
 ## Deployment
 
@@ -193,6 +189,16 @@ In order to fork the repository to make a copy the steps are:
   + At the top of the repository above settings locate the 'Fork' button
 There is now a copy of the repository in the Github account.
 
+ ## Cloning the repository
+
+1. On GitHub navigate to the main page of the repository
+2. Above the list of files click the dropdown code menu
+3. Select the https option and copy the link
+4. Open the GitPod Bash terminal
+5. Change the current working directory to the desired destination location
+6. Type the git clone command with the copied URL: git clone https://lin2907.github.io/general-knowledge-quiz.git
+7. Press enter to create the local clone
+
  ## Credits
 
 + Content
@@ -207,7 +213,7 @@ There is now a copy of the repository in the Github account.
 
   + Images were taken from [Pexels](https://www.pexels.com/) . <br>
   <br>
-  + Favicon was generated with [Favicon Generator](https://favicon.io/favicon-generator/).
+  + Favicon was generated with [Favicon.io](https://favicon.io/favicon-generator/).
 
 Enjoy the Challenge !
 
