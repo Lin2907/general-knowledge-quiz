@@ -74,7 +74,7 @@ let questions = [
         question: "In which museum can you find Leonardo Da Vinci's Mona Lisa?",
         options: ["Le Louvre", "Uffizi Museum", "British Museum", "Museum of Art"],
         answer: "Le Louvre",
-        imageUrl: "./assets/images/monalisa.jpg",
+        imageUrl: "./assets/images/mona-lisa.jpg"
     },
 
     {
