@@ -107,7 +107,7 @@ Each question features unique image, which is adding to the visual user experien
 ### Restart Option
   + At the end of the quiz or if the timer runs out, a Restart button is available. This provides the user with the opportunity to play the quiz again and improve the score.
 
-<img src = "assets/media/result.png" alt ="End score and restart button">
+<img src = "assets/media/result.png" alt ="End result feedback and restart button">
 
 ### Features left to Implement
 It includes user feedback area and links to support resources regarding the correct answers, ensuring that users can get more information.
