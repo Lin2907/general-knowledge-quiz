@@ -164,14 +164,15 @@ h1 {
 }
 
 #options .option-btn:disabled {
-  opacity: 0.8;
+  opacity: 0.5;
+  background-color: rgb(131, 13, 115);
 }
 
 #options .option-btn:disabled:hover {
-background-color: rgb(131, 13, 115);
-color: white; 
-border-color: rgb(241, 153, 230);
-}
+  background-color: rgb(131, 13, 115);
+  color: white; 
+  border-color: rgb(241, 153, 230);
+  }
 
 .score-area {
   margin: auto;
