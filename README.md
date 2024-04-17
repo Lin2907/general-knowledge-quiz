@@ -180,7 +180,8 @@ The site was deployed to GitHub pages. The steps taken to deploy are as follows:
 4. In Settings scroll down to GitHub pages which opens in a new page.
 5. From the source section drop-down menu, select the Main Branch
 Once the main branch has been selected, the page is automatically refreshed and a display indicates the successful deployment and the link to the address. 
-6. The link to the live website is here: [General Knowledge Quiz](https://lin2907.github.io/general-knowledge-quiz/) .
+
+The link to the live website can be found here: [General Knowledge Quiz](https://lin2907.github.io/general-knowledge-quiz/) .
 
  ## Forking the repository
 
