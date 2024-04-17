@@ -239,21 +239,10 @@ function setTimer() {
             clearInterval(countdown);
             disableButtons();
             if (sec <= 0) {
-                document.getElementById("feedback").textContent = "Sorry, Time's up...try again !";
-                document.getElementById("questions").style.display = "none";
-                document.getElementById("options").style.display = "none";
-                document.getElementById("result").style.display = "none";
-                nextButton.textContent = "Play again";
+            alert ("Sorry, Time's up :( Try again !");
                 resetScore();
-                nextButton.onclick = function () {
-                    document.getElementById("feedback").textContent = "";
-                    document.getElementById("questions").style.display = "block";
-                    document.getElementById("options").style.display = "block";
-                    document.getElementById("result").style.display = "block";
-                    nextButton.textContent = "Next";
-                    startQuiz();
-                };
-            }
+                restartQuiz();
+                };    
         }
     }, 1000); // run the interval every 1 second (1000ms)
 }
@@ -357,6 +346,7 @@ function restartQuiz() {
     nextButton.textContent = "Next"; // 'Restart' back to 'Next' button
     resetTimer();
 }
+
 
 
 
