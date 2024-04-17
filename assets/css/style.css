@@ -162,6 +162,17 @@ h1 {
   color: rgb(131, 13, 115);
   border: solid rgb(131, 13, 115) 5px;
 }
+
+#options .option-btn:disabled {
+  opacity: 0.8;
+}
+
+#options .option-btn:disabled:hover {
+background-color: rgb(131, 13, 115);
+color: white; 
+border-color: rgb(241, 153, 230);
+}
+
 .score-area {
   margin: auto;
   font-size: 1.2rem;
