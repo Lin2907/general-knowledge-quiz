@@ -114,13 +114,13 @@ It includes user feedback area and links to support resources regarding the corr
 
 # Testing
 
-1. ## Functionality
+## Functionality
 
   + Verified that all interactive elements (buttons , timer) are functional.
   + Tested any user inputs and ensured they produce the expected outcomes.
 Checked for any error messages or unexpected behavior.
 
-2. ## Layout and Design testing
+## Layout and Design testing
 
  + Reviewed the layout and design of the website. Ensured that the content is well-structured and aligned.
 
@@ -128,7 +128,7 @@ Checked for any error messages or unexpected behavior.
 
  + Confirmed that the website looks visually appealing on various screen sizes.
 
-3. ## Reporting issues
+## Reporting issues
  + No known issues
 
 
@@ -163,14 +163,14 @@ I've confirmed that the colors and fonts are chosen are easy to read and accessi
  + Fix: Removed the setTimer function.
 
  + Issue: The Quiz question images were not visible on the deployed version.
- + Cause : On the deployed version, the files were not recognized by the path given, I therefore added "../assets/" instead of  "./assets " .
+ + Cause : On the deployed version, the files were not recognized by the path given, I therefore added "./assets/images/" instead of  "../assets/images/ " .
  + Fix : Changed the path to the images .
 
 ## Unfixed Bugs
 
  + No known issues
 
-## Deployment
+# Deployment
 
 The site was deployed to GitHub pages. The steps taken to deploy are as follows:
 
@@ -179,7 +179,8 @@ The site was deployed to GitHub pages. The steps taken to deploy are as follows:
 3. In the GitHub repository, navigate to the Settings tab.
 4. In Settings scroll down to GitHub pages which opens in a new page.
 5. From the source section drop-down menu, select the Main Branch
-Once the main branch has been selected, the page is automatically refreshed and a display indicates the successful deployment and the link to the address. The link to the live website is here: [General Knowledge Quiz](https://lin2907.github.io/general-knowledge-quiz/) .
+Once the main branch has been selected, the page is automatically refreshed and a display indicates the successful deployment and the link to the address. 
+6. The link to the live website is here: [General Knowledge Quiz](https://lin2907.github.io/general-knowledge-quiz/) .
 
  ## Forking the repository
 
@@ -199,20 +200,20 @@ There is now a copy of the repository in the Github account.
 6. Type the git clone command with the copied URL: git clone https://lin2907.github.io/general-knowledge-quiz.git
 7. Press enter to create the local clone
 
- ## Credits
+ # Credits
 
-+ Content
+ ## Content
 
   * For randomized questions, Durstenfeld shuffle, an optimized version of Fisher-Yates was used.
 
   * Inspired by W3C schools and Code Institute lessons for creating timer function.
 
   + Score area was implemented similar as in "Love Maths" school project.
-+ Media
+ ## Media
   + Questions, options and answers were taken from [Quiz Trivia Games](www.quiztriviagames.com) .
 
-  + Images were taken from [Pexels](https://www.pexels.com/) . <br>
-  <br>
+  + Images were taken from [Pexels](https://www.pexels.com/) . 
+
   + Favicon was generated with [Favicon.io](https://favicon.io/favicon-generator/).
 
 Enjoy the Challenge !
