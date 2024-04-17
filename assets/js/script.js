@@ -224,7 +224,7 @@ document.addEventListener("DOMContentLoaded", function () {
 let countdown;
 //  Timer set up
 function setTimer() {
-    let sec = 300;
+    let sec = 200;
     let timeButton = document.getElementById("time");
     let countdown = setInterval(function () {
         sec--;
