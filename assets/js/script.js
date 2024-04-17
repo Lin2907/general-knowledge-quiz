@@ -58,6 +58,7 @@ function startQuiz() {
     showQuestion();
     toggleQuizModal();
     setTimer();
+    resetScore ();
 }
 
 // Adding questions - Question source : https://www.quiztriviagames.com/multiple-choice-trivia-questions/
@@ -305,8 +306,7 @@ function nextQuestion() {
         document.getElementById("options").style.display = "none";
         document.getElementById("result").style.display = "none";
         document.getElementById("feedback").style.display = "block";
-        nextButton.textContent = "Play again"; // Change the text content of Next button
-        resetScore();
+        nextButton.textContent = "Play again"; // Change the text content of Next button        
     }
 }
 
@@ -328,12 +328,13 @@ function totalScore() {
     let total = parseInt(document.getElementById("score").innerText);
     let wrongAnswer = parseInt(document.getElementById("incorrect").innerText);
     let feedbackImage = document.getElementById("quiz-img");
-    document.getElementById("feedback").textContent = "Final Score : " + total + " Correct and " + wrongAnswer + " Wrong Answers";
     feedbackElement.style.fontWeight = "bold";
     if (total >= 6) {
         feedbackImage.src = "./assets/images/prize.jpg";
+        document.getElementById("feedback").textContent = "Fantastic score! You're on fire! Keep shining!";
     } else {
         feedbackImage.src = "./assets/images/thanks.jpg";
+        document.getElementById("feedback").textContent = "You've got this! Keep practicing, and you'll only get better from here!";
     }
 }
 
