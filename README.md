@@ -91,7 +91,7 @@ View your total score at the end of the quiz.
 
 
 ### Timer
- + A timer is set for 5 minutes to complete the quiz, adding a sense of urgency and excitement.
+ + A timer is set for 200 seconds to complete the quiz, adding a sense of urgency and excitement.
 
  <img src = "assets/media/timer.png" alt= "Timer">
 
