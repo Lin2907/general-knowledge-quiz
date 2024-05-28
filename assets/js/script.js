@@ -1,3 +1,6 @@
+// Track if an answer option is clicked
+let answerClicked = false;
+
 // Get the modal - W3 Schools adjusted and added
 let modal = document.getElementById("myRules");
 
@@ -197,6 +200,9 @@ function showQuestion() {
             button.addEventListener("click", function () {
                 checkAnswer(option, currentQuestion);
                 disableButtons();
+        //Disabling NEXT button again
+                answerClicked = true;
+                nextButton.removeAttribute("disabled");
             });
 
             // Add button elements to options so they show on the page
@@ -240,9 +246,10 @@ function setTimer() {
             disableButtons();
             if (sec <= 0) {
             alert ("Sorry, Time's up :( Try again !");
-                resetScore();
-                restartQuiz();
-                };    
+            nextButton.removeAttribute("disabled"); 
+            resetScore();
+            restartQuiz();
+            };    
         }
     }, 1000); // run the interval every 1 second (1000ms)
 }
@@ -257,11 +264,12 @@ function resetTimer() {
 function checkAnswer(selectedOption, currentQuestion) {
     if (selectedOption === currentQuestion.answer) {
         resultElement.textContent = "Amazing ! This is Correct!";
-        resultElement.style.color = "#00c04b";
+        resultElement.style.color = "rgb(0, 82, 31)";
+        resultElement.style.fontWeight="bold";
         incrementScore();
     } else {
         resultElement.textContent = "Awwww, Wrong Answer!";
-        resultElement.style.color = "red";
+        resultElement.style.color = "rgb(143, 37, 10)";
         incrementWrongAnswer();
     }
 }
@@ -289,6 +297,8 @@ function nextQuestion() {
     if (currentQuestionNum < questions.length) {
         resultElement.textContent = "";
         showQuestion();
+        nextButton.disabled = true; // Disable 'Next' button after moving to the next question
+        answerClicked = false;
     } else {
         totalScore();
         document.getElementById("questions").style.display = "none";
@@ -344,6 +354,7 @@ function restartQuiz() {
     document.getElementById("result").style.display = " block";
     document.getElementById("feedback").style.display = "none"; // Hide the feedback
     nextButton.textContent = "Next"; // 'Restart' back to 'Next' button
+    nextButton.disabled = true
     resetTimer();
 }
 

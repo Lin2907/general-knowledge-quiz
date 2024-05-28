@@ -107,8 +107,7 @@ h1 {
 /* Style buttons for hover state*/
 
 #rules > button:hover,
-#start:hover,
-#next:hover {
+#start:hover {
   background-color: rgb(131, 13, 115);
   color: white;
   border: solid rgb(241, 174, 233) 5px;
@@ -133,7 +132,7 @@ h1 {
   font-size: 100%;
   padding: 20px;
 }
-
+/* Next button */
 #next {
   float: right;
   width: 180px;
@@ -141,10 +140,19 @@ h1 {
   font-size: 0.7em;
   font-weight: bold;
   letter-spacing: 2px;
+  border: solid rgb(241, 153, 230) 8px;
+  background-color: rgb(131, 13, 115);
+  color: white;
+  border-radius: 8px;
+  opacity:0.7;
+}
+
+#next:enabled{
   background-color: transparent;
   color: rgb(131, 13, 115);
   border: rgb(131, 13, 115) solid 5px;
-  border-radius: 8px;
+  opacity:1;
+  cursor:pointer;
 }
 
 #options .option-btn {
@@ -173,6 +181,13 @@ h1 {
   color: white; 
   border-color: rgb(241, 153, 230);
   }
+  /*Next button disabled style 
+#next button:disabled {
+  opacity: 0.5;
+  background-color: transparent;
+  border:solid rgb(131, 13, 115) 5px;
+}
+*/
 
 .score-area {
   margin: auto;
@@ -200,11 +215,11 @@ h1 {
   color: rgb(131, 13, 115);
 }
 #score {
-  color: #00c04b;
+  color: #6BFFA4;
 }
 
 #incorrect {
-  color: red;
+  color: #FFDBDB;
 }
 
 /* Smaller screens adjustment*/
